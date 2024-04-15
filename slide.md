@@ -28,18 +28,20 @@ git --distributed-even-if-your-workflow-isnt
 ![bg 120%](asset\novc.png)
 ![bg fit](asset\aftervc.png)
 
-# CLI - **基本操作**
+# Workspace **.git**
+
+# CLI - **Basic**(基本操作)
 ##
 |指令|中文|簡述|
 |---|---|---|
-|**init**|初始化|建立 `repo` 與預設分支|
+|**init**|初始化|建立 `repo` 與預設分支*|
 |**status**|狀態|檢視目前 `repo` 狀態|
 |**add**|加入|將檔案加入暫存區|
 |**commit**|提交|提交修改至 `repo` |
 ##
-> 預設分支於 2020 後陸續由 `master` 改為 `main`
+> *預設分支於 2020 後陸續由 `master` 改為 `main`
 
-# CLI - **分支**(Branch)
+# CLI - **Branch**(分支)
 ##
 |指令|中文|簡述|
 |---|---|---|
@@ -58,3 +60,15 @@ git --distributed-even-if-your-workflow-isnt
 ```
 
 # 取消提交
+# **Resources**(學習資源)
+# **Homework**
+- Install Git  *
+- Clone a repo 
+- Create your own directory `{name}`
+- Create a text file `T` in it
+- Write something in `T`
+- Add `T` to the stash
+- Commit with `{message}`
+- Mail to Mecer
+##
+> *probably need IT support
