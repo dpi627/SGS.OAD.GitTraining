@@ -158,11 +158,9 @@ git log --oneline --graph
 ##
 |Subject|Keywords|
 |---|---|
-|**Branch**|`GitHub` `Gitea` `GitLab` `Azure DevOps`|
-|**Remote**|`Git Flow` `GitHub Flow` `OAD Flow?`|
-|**CI/CD**|`Action` `Pipline` `yaml`|
-|**AI**|`GitHub Copilot CLI` `Commit Message Generator`|
-|**Misc.**|`Pull Request` `Code Review`|
+|**Branch**|`checkout` `switch` `merge` `rebase`|
+|**Remote**|`origin` `push` `pull` `fetch`|
+|**Misc.**|`tracking-branch`|
 
 ![bg right:24%](https://picsum.photos/720?image=444)
 <!-- _class: invert -->
