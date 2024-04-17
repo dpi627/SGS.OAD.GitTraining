@@ -156,7 +156,7 @@ git log --oneline --graph
 - https://www.youtube.com/watch?v=e9lnsKot_SQ
 - https://www.youtube.com/watch?v=ol7CMoJuAvI
 
-![bg left:20%](https://picsum.photos/720?image=533)
+![bg left:30%](https://picsum.photos/720?image=533)
 
 # What's **next** ...
 ##
@@ -164,9 +164,9 @@ git log --oneline --graph
 |---|---|
 |**Branch**|`checkout` `switch` `merge` `rebase`|
 |**Remote**|`origin` `push` `pull` `fetch`|
-|**Misc.**|`tracking-branch`|
+|**Misc.**|`tracking-branch` `conflict`|
 
-![bg right:24%](https://picsum.photos/720?image=444)
+![bg right:40%](https://picsum.photos/720?image=444)
 <!-- _class: invert -->
 
 # Home**work** 1
@@ -176,10 +176,9 @@ git log --oneline --graph
 - Create your own directory `D` (with your name)
 - Create a text file `T` in `D`, such as `*.txt` `*.sql` `*.js` `*.cs`
 - Write something in `T` and save
-- Add `T` to the stage area
-- Commit (to repo)
+- Add `T` to the stage then commit
 - Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
-
+###
 > *probably need IT support
 ![bg left:20%](https://picsum.photos/720?image=537)
 
