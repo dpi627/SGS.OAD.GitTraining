@@ -16,7 +16,7 @@ git --section 01 -cli "local repo" :D
 
 # **A**genda
 - What's Git
-- CLI and GUI
+- CLI / GUI
 - Local Repository
 - Resources
 - Homework 1
@@ -83,13 +83,8 @@ git clone https://xxx.yyy/zzz.git
 # Repository **.git**
 - `git init` 之後產生
 - 儲存 Git 相關資料
-    - commits
-    - branches
-    - tags
-    - remotes
-    - index
-    - config files
-![bg right:60% 110%](asset/reset.png)
+- 分為 local 與 remote
+![bg right:60% 90%](asset/repo.png)
 
 #
 ![bg 90%](asset/status.png)
@@ -105,6 +100,9 @@ git clone https://xxx.yyy/zzz.git
 > *每次 `commit` 都會生成一個 `hash code`，例如 `c802b33`
 **離開檢視請按 `q`，或者利用參數縮小範圍
 ![bg right:25%](https://picsum.photos/720?image=579)
+
+# Git -**commit**
+![bg right:75% fit](asset/commit.png)
 
 # DEMO - **File**
 暫存區加入特定或全部 `untracked` 檔案
@@ -129,20 +127,45 @@ git log --oneline --graph
 - 指向當前 `branch`
 - 或指向最新 `commit`
 - 可搭配 `~n` 與 `^n`
-- 許多指令都與 `HEAD` 有關，例如 `checkout` `merge` `rebase` `reset` `status` `log` ...等
 ![bg fit right:60%](asset/head.png)
 
+# Git - **revert**
+- 恢復至指定版本 `B`
+- 產生新的版本 `B'`
+- 不會複寫原紀錄 `C`
+![bg right:60% fit](asset/revert.png)
+
+# Git - **reset**
+- 回溯至指定版本 `B`
+- 不會產生新版本
+- 比 `B` 新的版本會消失
+- 記得 `hash` 仍可救回
+![bg right:60% fit](asset/reset.png)
+
+#
+![bg fit](asset/resetcli.png)
 
 # **Online** Resources
 - https://learngitbranching.js.org/?locale=zh_TW
+- https://git-scm.com/book/zh-tw/v2/
 - https://kingofamani.gitbooks.io/git-teach/content/
 - https://jlord.us/git-it/index-zhtw.html
 - https://www.youtube.com/watch?v=e9lnsKot_SQ
-### for **Slide**
-- https://markdown.tw/
-- https://marp.app/
-- https://picsum.photos/
-![bg right:20%](https://picsum.photos/720?image=533)
+
+![bg left:20%](https://picsum.photos/720?image=533)
+
+# What's **next** ...
+##
+|Subject|Keywords|
+|---|---|
+|**Branch**|`GitHub` `Gitea` `GitLab` `Azure DevOps`|
+|**Remote**|`Git Flow` `GitHub Flow` `OAD Flow?`|
+|**CI/CD**|`Action` `Pipline` `yaml`|
+|**AI**|`GitHub Copilot CLI` `Commit Message Generator`|
+|**Misc.**|`Pull Request` `Code Review`|
+
+![bg right:24%](https://picsum.photos/720?image=444)
+<!-- _class: invert -->
 
 # Home**work** 1
 - Install* Git from https://git-scm.com/download/win

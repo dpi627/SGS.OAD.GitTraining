@@ -17,7 +17,7 @@ git --section 02 -branch "remote repo" :(
 # **A**genda
 - Branch
 - Remote Repository
-- FETCH
+- Why fetch
 - Resources
 - Homework 2
 ![bg left](https://picsum.photos/720?image=143)
@@ -56,6 +56,12 @@ git merge dev
 ![bg left:33%](asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
+# Git - **merge**
+![bg right:70% fit](asset/merge.png)
+
+# Git - **rebace**
+![bg right:70% fit](asset/rebase.png)
+
 # CLI - **Remote**
 ##
 |指令|中文|簡述|
@@ -67,18 +73,6 @@ git merge dev
 ###
 > *遠端 `repo` 預設別名為 `origin`
 ![bg right:33%](https://picsum.photos/720?image=550)
-
-# Git - **Tracking** Branch
-- 與遠端分支關聯的**本地分支**
-- `origin` = 遠端 `repo`
-- `origin/main` = 遠端 `main` 的追蹤分支
-- 追蹤分支**僅**用來反映其遠端分支變化
-- 關於遠端的**指令***會影響追蹤分支
-- 本地**無法**直接操作追蹤分支
-###
-> *例如 `clone` `push` `pull` `fetch` 等
-**左為 `ftech` 示意，僅更新追蹤分支
-![bg vertical left:44% fit](asset/fetch3.png)
 
 # DEMO - **Remote**
 設定遠端 `repo`
@@ -97,7 +91,25 @@ git pull
 ![bg left:33%](asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
-# Why need **FETCH** ?
+# Git - **Tracking** Branch
+- 與遠端分支關聯的**本地分支**
+- `origin` = 遠端 `repo`
+- `origin/main` = 遠端 `main` 追蹤分支
+- 追蹤分支**僅**用來反映其遠端分支變化
+- 本地**無法**直接操作追蹤分支
+###
+> *左圖為 `ftech` 示意，僅更新追蹤分支
+![bg vertical left:44% fit](asset/fetch3.png)
+
+# 
+![bg fit](asset/pull3.png)
+![bg fit](asset/pull4.png)
+
+#
+![bg fit](asset/push1.png)
+![bg fit](asset/push2.png)
+
+# Why need **fetch** ?
 - **查看遠端更新**
     不須合併即可檢視遠端修改歷程
 - **比對分支差異**
@@ -106,8 +118,6 @@ git pull
     定期執行，避免合併時大量變更
 ![bg vertical left:50% fit](asset/fetch1.png)
 ![bg left:50% fit](asset/fetch2.png)
-
-# 取消提交
 
 # **Online** Resources
 - https://www.toptal.com/developers/gitignore
@@ -118,19 +128,6 @@ git pull
 - https://www.tenlong.com.tw/products/9789865025274
 ![bg vertical fit right:28%](asset/book1.png)
 ![bg vertical fit right:28%](asset/book2.png)
-
-# Home**work** 2
-- Back to the local repo
-- Create a branch `B` with your name
-- Make some chagnes, then commit
-- Merge `B` into `main`
-- Pull data from remote repo*
-- Push `B` to remote repo
-- Review Git logs
-- Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
-###
-> *`pull` before `push` to avoid diff version warning
-![bg left:20%](https://picsum.photos/720?image=83)
 
 # What's **next** ...
 ##
@@ -144,6 +141,19 @@ git pull
 
 ![bg right:24%](https://picsum.photos/720?image=555)
 <!-- _class: invert -->
+
+# Home**work** 2
+- Back to the local repo
+- Create a branch `B` with your name
+- Add some content, then commit
+- Merge `B` into `main`
+- Pull data from remote repo*
+- Push `B` to remote repo
+- Review Git logs
+- Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
+###
+> *`pull` before `push` to avoid diff version warning
+![bg left:20%](https://picsum.photos/720?image=83)
 
 # 😀 Thank you !
 feel free to ask if you have any other questions.
