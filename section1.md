@@ -8,7 +8,7 @@ footer: git-section-`01`
 # 
 ![](asset/gitlogo.png)
 ```powershell
-git --section 01 -cli "local repo" :D
+git --section 01 -cli -demo "local repo" :D
 ```
 ##
 > **OAD** / brian_li
@@ -52,7 +52,7 @@ git --section 01 -cli "local repo" :D
 |![w:200](asset/tortoise.png)|![w:200](asset/githubdesktop.png)|![w:150](asset/sourcetree.png)|![w:100](asset/Visual_Studio_Icon_2022.svg.png)|![w:100](asset/vscode.png)|![w:100](asset/ads.jpg)|
 ###
 >各 GUI 操作邏輯、功能略有不同，但底層一樣都是 Git 指令
-GUI 有自訂功能例如 `Sync` = `pull` + `push` 或 `Publish` = `remote` + `push`
+GUI 有自訂功能例如 **`Sync`** ≈ `pull` + `push` 或 **`Publish`** ≈ `remote` + `push`
 <!-- _backgroundColor: #eee; -->
 
 # CLI - **Repository**
@@ -83,8 +83,10 @@ git clone https://xxx.yyy/zzz.git
 # Repository **.git**
 - `git init` 之後產生
 - 儲存 Git 相關資料
-- 分為 local 與 remote
-![bg right:60% 90%](asset/repo.png)
+    `commits` `branches`
+    `tags` `HEAD` `index`
+    `config` `Hooks`
+![bg right:60% fit](asset/gitcomp.png)
 
 #
 ![bg 90%](asset/status.png)
@@ -93,12 +95,12 @@ git clone https://xxx.yyy/zzz.git
 ##
 |指令|中文|簡述|
 |---|---|---|
-|**add**|加入|將檔案加入暫存區，準備提交(尚未提交)|
+|**add**|加入|將檔案加入暫存區，準備提交|
 |**commit**|提交|提交修改*至 `repo`，需填寫提交內容|
 |**log**|歷程|檢視** `repo` 歷程記錄|
 ###
 > *每次 `commit` 都會生成一個 `hash code`，例如 `c802b33`
-**離開檢視請按 `q`，或者利用參數縮小範圍
+**離開檢視按 `q`，可搭配多種參數
 ![bg right:25%](https://picsum.photos/720?image=579)
 
 # Git -**commit**
@@ -130,13 +132,14 @@ git log --oneline --graph
 ![bg fit right:60%](asset/head.png)
 
 # Git - **revert**
-- 恢復至指定版本 `B`
-- 產生新的版本 `B'`
-- 不會複寫原紀錄 `C`
+- 恢復至版本 `B`
+- 產生新版本 `B'`
+- 版本 `C` 不會消失
+- `B'` = `C` - `B`
 ![bg right:60% fit](asset/revert.png)
 
 # Git - **reset**
-- 回溯至指定版本 `B`
+- 回溯至版本 `B`
 - 不會產生新版本
 - 比 `B` 新的版本會消失
 - 記得 `hash` 仍可救回
@@ -151,6 +154,7 @@ git log --oneline --graph
 - https://kingofamani.gitbooks.io/git-teach/content/
 - https://jlord.us/git-it/index-zhtw.html
 - https://www.youtube.com/watch?v=e9lnsKot_SQ
+- https://www.youtube.com/watch?v=ol7CMoJuAvI
 
 ![bg left:20%](https://picsum.photos/720?image=533)
 
