@@ -18,6 +18,7 @@ git --section 02 -branch "remote repo" :(
 - Branch
 - Remote Repository
 - Why fetch
+- Conflict
 - Resources
 - Homework 2
 ![bg left](https://picsum.photos/720?image=143)
@@ -26,33 +27,33 @@ git --section 02 -branch "remote repo" :(
 ![bg fit 75%](asset/branch2.png)
 
 # CLI - **Branch**
-##
 |指令|中文|簡述|
 |---|---|---|
-|**branch**|分支|建立分支，需提供分支名稱|
-|**checkout**|簽出|切換到指定分支，需提供分支名稱|
-|**switch**|切換|同上，於 `Git 2.23` 後提供|
+|**branch**|分支|操作分支*|
+|**checkout**|簽出|切換指定分支**|
 |**merge**|合併|以**目前分支**併吞其他分支|
+|**rebase**|重設|看不到合併提交，更簡潔|
 ###
 > *Git 指令永遠都是針對 `目前分支` 進行操作
-![bg right:33%](https://picsum.photos/720?image=543)
+**`2.23` 之後提供 `switch` 取代 `checkout`
+![bg right:30%](https://picsum.photos/720?image=543)
 
 # DEMO - **Branch**
 建立分支
 ```powershell
 git branch dev
 ```
-切換分支
+切換分支 (擇一即可)
 ```powershell
 git checkout dev
 git switch dev
 ```
-合併分支 
+合併分支*
 ```powershell
-git swtich main
+git switch main
 git merge dev
 ```
-> ⚠️注意當前分支是否為 `main`
+> *⚠️注意當前分支是否為 `main`
 ![bg left:33%](asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
@@ -143,16 +144,15 @@ git pull
 <!-- _class: invert -->
 
 # Home**work** 2
+- Create a account in [Gitea](http://twoadcode:3000/)
 - Back to the local repo
 - Create a branch `B` with your name
-- Add some content, then commit
+- Add content and then commit
 - Merge `B` into `main`
-- Pull data from remote repo*
-- Push `B` to remote repo
-- Review Git logs
+- Push to remote* (only `main` or `B` together)
 - Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
 ###
-> *`pull` before `push` to avoid diff version warning
+> *version diff warning may appear
 ![bg left:20%](https://picsum.photos/720?image=83)
 
 # 😀 Thank you !

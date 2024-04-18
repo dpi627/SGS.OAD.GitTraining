@@ -12,48 +12,17 @@ git --section 01 -cli -demo "local repo" :D
 ```
 ##
 > **OAD** / brian_li
-![bg right:33%](asset/log.jpg)
+![bg right:33%](https://picsum.photos/720?image=201)
 
 # **A**genda
-- What's Git
-- CLI / GUI
-- Local Repository
+- Repository (local)
+- File status
+- HEAD
+- Time Travel
 - Resources
 - Homework 1
-![bg left](https://picsum.photos/720?image=20)
+![bg left](https://picsum.photos/720?image=125)
 
-# **名詞**解釋
-|名詞|簡述|
-|---|---|
-|**Git**|一種分散式「**版本控制**」|
-|**GitHub**|一個提供多種服務的「**網站**」|
-|**Repository**|儲存庫、程式庫，簡稱 `repo`|
-|**Branch**|分支，一個 `repo` 可包含多個分支|
-|**CLI**|Command Line Interface，例如 CMD|
-
-![bg left:33%](asset/github.jpeg)
-
-# 
-![bg 120%](asset/novc.png)
-![bg fit](asset/aftervc.png)
-
-# **CLI** - Command Line Interface
-|CMD|Git Bash|Terminal✅|VS2022|VSCode|ADS|
-|-|-|-|-|-|-|
-|![w:200](asset/cmd.png)|![w:200](asset/gitbash.png)|![w:150](asset/terminal.png)|![w:100](asset/Visual_Studio_Icon_2022.svg.png)|![w:100](asset/vscode.png)|![w:100](asset/ads.jpg)|
-###
->✅表示個人常用，後面三種開發工具也有內建CLI
-熟悉指令對學習 Git 十分有幫助，建議從指令開始了解
-<!-- _backgroundColor: #eee; -->
-
-# **GUI** - Graphic User Interface
-|[TortoiseGit](https://tortoisegit.org/)|[GitHub Desktop](https://desktop.github.com/)|[Sourcetree](https://www.sourcetreeapp.com/)✅|VS2022|VSCode|ADS|
-|-|-|-|-|-|-|
-|![w:200](asset/tortoise.png)|![w:200](asset/githubdesktop.png)|![w:150](asset/sourcetree.png)|![w:100](asset/Visual_Studio_Icon_2022.svg.png)|![w:100](asset/vscode.png)|![w:100](asset/ads.jpg)|
-###
->各 GUI 操作邏輯、功能略有不同，但底層一樣都是 Git 指令
-GUI 有自訂功能例如 **`Sync`** ≈ `pull` + `push` 或 **`Publish`** ≈ `remote` + `push`
-<!-- _backgroundColor: #eee; -->
 
 # CLI - **Repository**
 |指令|中文|簡述|
@@ -130,6 +99,21 @@ git log --oneline --graph
 - 或指向最新 `commit`
 - 可搭配 `~n` 與 `^n`
 ![bg fit right:60%](asset/head.png)
+
+#
+![bg 85% fit](asset/gitcomp2.png)
+
+# CLI - **回溯版本**
+##
+|指令|中文|簡述|
+|---|---|---|
+|**revert**|撤銷|產生一個**反向版本**，抵銷修改內容|
+|**reset**|重置|回溯到特定位置 = 特定 `HEAD`|
+|**checkout**|簽出|透過簽出特定版本達到回溯*|
+###
+> *`2.23` 之後提供 `restore` 取代 `checkout`
+其他相關還有 `cherry-pick` `reflog`
+![bg right:25%](https://picsum.photos/720?image=567)
 
 # Git - **revert**
 - 恢復至版本 `B`
