@@ -6,7 +6,7 @@ footer: git-section-`01`
 ---
 
 # 
-![](asset/gitlogo.png)
+![](../asset/gitlogo.png)
 ```powershell
 git --section 01 -cli -demo "local repo" :D
 ```
@@ -46,7 +46,7 @@ git status
 ```powershell
 git clone https://xxx.yyy/zzz.git
 ```
-![bg left:33%](asset/ignore.jpg)
+![bg left:33%](../asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
 # Repository **.git**
@@ -55,10 +55,10 @@ git clone https://xxx.yyy/zzz.git
     `commits` `branches`
     `tags` `HEAD` `index`
     `config` `Hooks`
-![bg right:60% fit](asset/gitcomp.png)
+![bg right:60% fit](../asset/gitcomp.png)
 
 #
-![bg 90%](asset/status.png)
+![bg 90%](../asset/status.png)
 
 # CLI - **File**
 ##
@@ -73,7 +73,7 @@ git clone https://xxx.yyy/zzz.git
 ![bg right:25%](https://picsum.photos/720?image=579)
 
 # Git -**commit**
-![bg right:75% fit](asset/commit.png)
+![bg right:75% fit](../asset/commit.png)
 
 # DEMO - **File**
 暫存區加入特定或全部 `untracked` 檔案
@@ -90,7 +90,7 @@ git commit -m "my first commit"
 git log
 git log --oneline --graph
 ```
-![bg left:33%](asset/ignore.jpg)
+![bg left:33%](../asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
 # Git - **HEAD**
@@ -98,10 +98,10 @@ git log --oneline --graph
 - 指向當前 `branch`
 - 或指向最新 `commit`
 - 可搭配 `~n` 與 `^n`
-![bg fit right:60%](asset/head.png)
+![bg fit right:60%](../asset/head.png)
 
 #
-![bg 85% fit](asset/gitcomp2.png)
+![bg 85% fit](../asset/gitcomp2.png)
 
 # CLI - **回溯版本**
 ##
@@ -120,17 +120,17 @@ git log --oneline --graph
 - 產生新版本 `B'`
 - 版本 `C` 不會消失
 - `B'` = `C` - `B`
-![bg right:60% fit](asset/revert.png)
+![bg right:60% fit](../asset/revert.png)
 
 # Git - **reset**
 - 回溯至版本 `B`
 - 不會產生新版本
 - 比 `B` 新的版本會消失
 - 記得 `hash` 仍可救回
-![bg right:60% fit](asset/reset.png)
+![bg right:60% fit](../asset/reset.png)
 
 #
-![bg fit](asset/resetcli.png)
+![bg fit](../asset/resetcli.png)
 
 # **Online** Resources
 - https://learngitbranching.js.org/?locale=zh_TW

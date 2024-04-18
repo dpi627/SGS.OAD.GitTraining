@@ -6,7 +6,7 @@ footer: git-section-`02`
 ---
 
 # 
-![](asset/gitlogo.png)
+![](../asset/gitlogo.png)
 ```powershell
 git --section 02 -branch "remote repo" :(
 ```
@@ -24,7 +24,7 @@ git --section 02 -branch "remote repo" :(
 ![bg left](https://picsum.photos/720?image=143)
 
 #
-![bg fit 75%](asset/branch2.png)
+![bg fit 75%](../asset/branch2.png)
 
 # CLI - **Branch**
 |指令|中文|簡述|
@@ -54,14 +54,14 @@ git switch main
 git merge dev
 ```
 > *⚠️注意當前分支是否為 `main`
-![bg left:33%](asset/ignore.jpg)
+![bg left:33%](../asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
 # Git - **merge**
-![bg right:70% fit](asset/merge.png)
+![bg right:70% fit](../asset/merge.png)
 
 # Git - **rebace**
-![bg right:70% fit](asset/rebase.png)
+![bg right:70% fit](../asset/rebase.png)
 
 # CLI - **Remote**
 ##
@@ -89,7 +89,7 @@ git push -u origin main
 git pull
 ```
 > *設定上游為 `origin/main`，未來 `push` 即可
-![bg left:33%](asset/ignore.jpg)
+![bg left:33%](../asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
 # Git - **Tracking** Branch
@@ -100,15 +100,15 @@ git pull
 - 本地**無法**直接操作追蹤分支
 ###
 > *左圖為 `ftech` 示意，僅更新追蹤分支
-![bg vertical left:44% fit](asset/fetch3.png)
+![bg vertical left:44% fit](../asset/fetch3.png)
 
 # 
-![bg fit](asset/pull3.png)
-![bg fit](asset/pull4.png)
+![bg fit](../asset/pull3.png)
+![bg fit](../asset/pull4.png)
 
 #
-![bg fit](asset/push1.png)
-![bg fit](asset/push2.png)
+![bg fit](../asset/push1.png)
+![bg fit](../asset/push2.png)
 
 # Why need **fetch** ?
 - **查看遠端更新**
@@ -117,8 +117,8 @@ git pull
     透過 `diff` 比對，預覽合併結果
 - **保持資料同步**
     定期執行，避免合併時大量變更
-![bg vertical left:50% fit](asset/fetch1.png)
-![bg left:50% fit](asset/fetch2.png)
+![bg vertical left:50% fit](../asset/fetch1.png)
+![bg left:50% fit](../asset/fetch2.png)
 
 # **Online** Resources
 - https://www.toptal.com/developers/gitignore
@@ -127,8 +127,8 @@ git pull
 ## **Offline** Resources
 - https://www.tenlong.com.tw/products/9789864342662
 - https://www.tenlong.com.tw/products/9789865025274
-![bg vertical fit right:28%](asset/book1.png)
-![bg vertical fit right:28%](asset/book2.png)
+![bg vertical fit right:28%](../asset/book1.png)
+![bg vertical fit right:28%](../asset/book2.png)
 
 # What's **next** ...
 ##
