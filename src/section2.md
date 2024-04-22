@@ -19,7 +19,7 @@ git --section 02 -branch "remote repo" :(
 - Remote Repository
 - Git Server/Service
 - Resources
-- Homework 2
+- Homework
 ![bg left](https://picsum.photos/720?image=143)
 
 #
@@ -179,10 +179,10 @@ git pull
 |---|---|
 |**Work Flow**|`Git Flow` `GitHub Flow` `OAD Flow?`|
 |**CI/CD**|`Action` `Pipline` `yaml`|
-|**AI**|`GitHub Copilot CLI` `Commit Message Generator`|
+|**AI**|`GitHub Copilot CLI` `Commit Message`|
 |**Misc.**|`Pull Request` `Code Review`|
 
-![bg right:24%](https://picsum.photos/720?image=555)
+![bg right:34%](https://picsum.photos/720?image=555)
 <!-- _class: invert -->
 
 # Home**work** 2

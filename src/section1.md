@@ -20,7 +20,7 @@ git --section 01 -cli -demo "local repo" :D
 - HEAD
 - Time Travel
 - Resources
-- Homework 1
+- Homework
 ![bg left](https://picsum.photos/720?image=125)
 
 
