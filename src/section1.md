@@ -103,6 +103,9 @@ git log --oneline --graph
 #
 ![bg 85% fit](../asset/gitcomp2.png)
 
+# Git - **diff**
+![bg fit](../asset/gitdiff.jpg)
+
 # CLI - **回溯版本**
 ##
 |指令|中文|簡述|
