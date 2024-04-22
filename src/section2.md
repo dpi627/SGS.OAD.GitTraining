@@ -17,8 +17,7 @@ git --section 02 -branch "remote repo" :(
 # **A**genda
 - Branch
 - Remote Repository
-- Why fetch
-- Conflict
+- Git Server/Service
 - Resources
 - Homework 2
 ![bg left](https://picsum.photos/720?image=143)
@@ -36,6 +35,7 @@ git --section 02 -branch "remote repo" :(
 ###
 > *Git 指令永遠都是針對 `目前分支` 進行操作
 **`2.23` 之後提供 `switch` 取代 `checkout`
+⚠️切換分支時，如有未提交修改會警告
 ![bg right:30%](https://picsum.photos/720?image=543)
 
 # DEMO - **Branch**
@@ -43,25 +43,47 @@ git --section 02 -branch "remote repo" :(
 ```powershell
 git branch dev
 ```
-切換分支 (擇一即可)
+切換分支 (擇一)
 ```powershell
 git checkout dev
 git switch dev
 ```
 合併分支*
 ```powershell
-git switch main
 git merge dev
 ```
-> *⚠️注意當前分支是否為 `main`
+> *⚠️注意當前分支是否為 `main`。除了 `merge` 還有 `rebase`。只要合併就有機率產生衝突。
 ![bg left:33%](../asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
 # Git - **merge**
-![bg right:70% fit](../asset/merge.png)
+![bg right fit vertical](../asset/merge1.png)
+![bg right fit](../asset/merge2.png)
+##### Git can automatically merge commits unless there are changes that **conflict** in both commit sequences.
+沒衝突會自動合併
 
-# Git - **rebace**
-![bg right:70% fit](../asset/rebase.png)
+# Git - **rebase**
+![bg right fit vertical](../asset/rebase1.svg)
+![bg right fit](../asset/rebase2.svg)
+###### Remember `rebase` can alter the commit history. This can be **dangerous** if not done properly, especially with branches that others are working on.
+團隊開發沒事不要 `rebase`，除非大家都很熟
+###### https://needoneapp.medium.com/git-merge-vs-git-rebase-17392c4d870d
+
+# Resolving **conflict**
+![bg right:60% fit vertical](../asset/conflict1.png)
+![bg right 95% vertical](../asset/conflict2.png)
+##### 有合併就有**衝突**
+- 使用 `<` `=` `>` 標註
+- 修改到正確即可
+
+https://gitbook.tw/chapters/branch/fix-conflict
+
+#
+![bg fit](../asset/cherrypick3.jpg)
+![bg fit](../asset/cherrypick2.jpg)
+
+#
+![bg fit 90%](../asset/allarea.png)
 
 # CLI - **Remote**
 ##
@@ -80,7 +102,7 @@ git merge dev
 ```powershell
 git remote add origin https://xxx.yyy/zzz.git
 ```
-推送資料*
+推送資料* (推送分支)
 ```powershell
 git push -u origin main
 ```
@@ -102,13 +124,17 @@ git pull
 > *左圖為 `ftech` 示意，僅更新追蹤分支
 ![bg vertical left:44% fit](../asset/fetch3.png)
 
-# 
-![bg fit](../asset/pull3.png)
-![bg fit](../asset/pull4.png)
-
 #
-![bg fit](../asset/push1.png)
-![bg fit](../asset/push2.png)
+![bg 80%](../asset/trankingBranch.png)
+
+# Git - **pull**
+![bg 80% right:70% vertical](../asset/pull3.png)
+![bg 70% fit](../asset/pull4.png)
+###### = `fetch` + `merge`
+
+# Git - **push**
+![bg right:70% fit](../asset/push1.png)
+###### 版本如與 `remote` 有差異會**警告**
 
 # Why need **fetch** ?
 - **查看遠端更新**
@@ -119,6 +145,23 @@ git pull
     定期執行，避免合併時大量變更
 ![bg vertical left:50% fit](../asset/fetch1.png)
 ![bg left:50% fit](../asset/fetch2.png)
+
+# Git **Sever**/**Service**
+###
+|[Gitea](https://about.gitea.com/)✅|[Azure DevOps](https://dev.azure.com/)✅|[GitHub](https://github.com/)☑️|[GitLab](https://about.gitlab.com/)|
+|-|-|-|-|
+|![w:250](../asset/gitea.png)|![w:250](../asset/azuredevops.png)|![w:220](../asset/github.png)|![w:200](../asset/gitlab.png)|
+###
+>☑️個人練習 / ✅公司使用 (可到 [這裡](http://twoadcode:3000/) 註冊帳號練習，目前未確定何種平台)
+<!-- _backgroundColor: #eee; -->
+
+# Dev**Ops**
+![bg right:70% fit](../asset/devops2.png)
+### Development Operations
+##### 一種重視**軟體開發人員**（Dev）和**IT運維技術人員**（Ops）之間溝通合作的文化、運動或慣例 🥲🥲🥲
+
+#
+![bg 90%](../asset/devops.png)
 
 # **Online** Resources
 - https://www.toptal.com/developers/gitignore
@@ -134,7 +177,6 @@ git pull
 ##
 |Subject|Keywords|
 |---|---|
-|**Git Server**|`GitHub` `Gitea` `GitLab` `Azure DevOps`|
 |**Work Flow**|`Git Flow` `GitHub Flow` `OAD Flow?`|
 |**CI/CD**|`Action` `Pipline` `yaml`|
 |**AI**|`GitHub Copilot CLI` `Commit Message Generator`|
