@@ -103,7 +103,7 @@ git log --oneline --graph
 #
 ![bg 85% fit](../asset/gitcomp2.png)
 
-# Git - **diff**
+#
 ![bg fit](../asset/gitdiff.jpg)
 
 # CLI - **回溯版本**
@@ -151,6 +151,7 @@ git log --oneline --graph
 |---|---|
 |**Branch**|`checkout` `switch` `merge` `rebase`|
 |**Remote**|`origin` `push` `pull` `fetch`|
+|**Server**|`github` `gitea` `azure devops`|
 |**Misc.**|`tracking-branch` `conflict`|
 
 ![bg right:40%](https://picsum.photos/720?image=444)
