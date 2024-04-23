@@ -16,6 +16,7 @@ git --section 03 -workflow "git flow" :|
 
 
 # **A**genda
+
 - Work Flow
 - Pull Request
 - Code Review
@@ -25,187 +26,158 @@ git --section 03 -workflow "git flow" :|
 
 # Work**flow**
 ![bg right](https://picsum.photos/720?image=153)
+
+> ###### **工作流程**描述了代碼的**生命週期**，包括開發、測試、代碼審查、集成、部署等。不同團隊可能有不同流程，取決於**需求**、**技術**和組織**文化**。
+
 - Centralized Workflow
 - Feature Branch Workflow
-- ### **Git FLow**
-- GitHub Flow
-- Trunk-Based Workflow
+- ✅ **Git FLow**
+- ☑️ **GitHub Flow**
+- GitLab Flow
 - Forking Workflow
+
+# Git **Flow**
+![bg right:60% fit](../asset/gitflow.png)
+- 於 2010 年[發表](https://nvie.com/posts/a-successful-git-branching-model/)
+- 一種 Git 分支模型
+- 包含**常駐**與**臨時**分支
+- 以 `merge` 為基底
+- CLI / GUI 支援
 ###
->OAD Workflow❓
+>[gitflow](https://github.com/nvie/gitflow) on GitHub
 
-# CLI - **Branch**
-![bg right:30%](https://picsum.photos/720?image=543)
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+
+# GitFlow - **init**
+![bg left](https://picsum.photos/720?image=574)
+
+```shell
+git flow init
 ```
 
-# DEMO - **Branch**
-建立分支
-```powershell
-git branch dev
+- 初始化 GitFlow 環境
+- 會詢問每種分支名稱
+- 約略*等於以下指令
+
+```shell
+git init
+git branch develop
+git switch develop
 ```
-切換分支 (擇一)
-```powershell
-git checkout dev
-git switch dev
-```
-合併分支*
-```powershell
-git merge dev
-```
-> *⚠️注意當前分支是否為 `main`。除了 `merge` 還有 `rebase`。只要合併就有機率產生衝突。
-![bg left:33%](../asset/ignore.jpg)
-<!-- _backgroundColor: #ddd -->
+>*`git flow` = `git` 指令集封裝
 
-# Git - **merge**
-![bg right fit vertical](../asset/merge1.png)
-![bg right fit](../asset/merge2.png)
-##### Git can automatically merge commits unless there are changes that **conflict** in both commit sequences.
-沒衝突會自動合併
+# GitFlow - **Branches**
+![bg right:22%](https://picsum.photos/720?image=167)
+###
 
-# Git - **rebase**
-![bg right fit vertical](../asset/rebase1.svg)
-![bg right fit](../asset/rebase2.svg)
-###### Remember `rebase` can alter the commit history. This can be **dangerous** if not done properly, especially with branches that others are working on.
-團隊開發沒事不要 `rebase`，除非大家都很熟
-###### https://needoneapp.medium.com/git-merge-vs-git-rebase-17392c4d870d
+| 類型   | 說明        | 常見名稱(或前綴)                                  |
+| ---- | --------- | ------------------------------------------ |
+| 常駐分支 | 一直存在 `repo` | `main` `develeop` `master`                         |
+| 臨時分支 | 使用完畢刪除 | `feature/*` `release/*` `hotfix/*` |
 
-# Resolving **conflict**
-![bg right:60% fit vertical](../asset/conflict1.png)
-![bg right 95% vertical](../asset/conflict2.png)
-##### 有合併就有**衝突**
-- 使用 `<` `=` `>` 標註
-- 修改到正確即可
+###
+- 主要分支可能為 `main` 或 `master`
+- 分支(或前綴)可改為縮寫，例如將 `develop` 改為 `dev`
+- 其他如 `feature/xxx` `release/xxx` `hotfix/xxx`
+看過人改為 `f/xxx` `r/xxx` `h/xxx` 可少打幾個字 😀
 
-https://gitbook.tw/chapters/branch/fix-conflict
+# **常駐**分支
+![bg left:22%](https://picsum.photos/720?image=168)
+| 名稱        | 說明                  |tag|
+| --------- | ------------------- |--|
+| `main`    | 主要分支，每個節點都可以發布到正式環境 |✅|
+| `develop` | 開發分支，每次開發功能都應該從這裡開始 ||
+###
+- `main` 一般會設定保護，只有特定權限或角色允許操作
+- `main` 上面的節點通常會加上 `tag` 例如標註版本編號
+- 節點併入 `main` 通常透過 `pull request`
+- 通常於 `pull request` 進行 `code review`
 
 #
-![bg fit](../asset/cherrypick3.jpg)
-![bg fit](../asset/cherrypick2.jpg)
+![bg 90% fit](../asset/gitflow1.svg)
 
-#
-![bg fit 90%](../asset/allarea.png)
-
-# CLI - **Remote**
-##
-|指令|中文|簡述|
-|---|---|---|
-|**remote**|遠端|管理遠端分支*|
-|**push**|推送|上傳修改資料到遠端|
-|**pull**|拉取|下載修改資料到本地|
-|**fetch**|擷取|下載修改資料到**追蹤分支**|
-###
-> *遠端 `repo` 預設別名為 `origin`
-![bg right:33%](https://picsum.photos/720?image=550)
-
-# DEMO - **Remote**
-設定遠端 `repo`
-```powershell
-git remote add origin https://xxx.yyy/zzz.git
-```
-推送資料* (推送分支)
-```powershell
-git push -u origin main
-```
-拉取資料 = `fetch` + `merge`
-```powershell
-git pull
-```
-> *設定上游為 `origin/main`，未來 `push` 即可
-![bg left:33%](../asset/ignore.jpg)
-<!-- _backgroundColor: #ddd -->
-
-# Git - **Tracking** Branch
-- 與遠端分支關聯的**本地分支**
-- `origin` = 遠端 `repo`
-- `origin/main` = 遠端 `main` 追蹤分支
-- 追蹤分支**僅**用來反映其遠端分支變化
-- 本地**無法**直接操作追蹤分支
-###
-> *左圖為 `ftech` 示意，僅更新追蹤分支
-![bg vertical left:44% fit](../asset/fetch3.png)
-
-#
-![bg 80%](../asset/trankingBranch.png)
-
-# Git - **pull**
-![bg 80% right:70% vertical](../asset/pull3.png)
-![bg 70% fit](../asset/pull4.png)
-###### = `fetch` + `merge`
-
-# Git - **push**
-![bg right:70% fit](../asset/push1.png)
-###### 版本如與 `remote` 有差異會**警告**
-
-# Why need **fetch** ?
-- **查看遠端更新**
-    不須合併即可檢視遠端修改歷程
-- **比對分支差異**
-    透過 `diff` 比對，預覽合併結果
-- **保持資料同步**
-    定期執行，避免合併時大量變更
-![bg vertical left:50% fit](../asset/fetch1.png)
-![bg left:50% fit](../asset/fetch2.png)
-
-# Git **Sever**/**Service**
-###
-|[Gitea](https://about.gitea.com/)✅|[Azure DevOps](https://dev.azure.com/)✅|[GitHub](https://github.com/)☑️|[GitLab](https://about.gitlab.com/)|
-|-|-|-|-|
-|![w:250](../asset/gitea.png)|![w:250](../asset/azuredevops.png)|![w:220](../asset/github.png)|![w:200](../asset/gitlab.png)|
-###
->☑️個人練習 / ✅公司使用 (可到 [這裡](http://twoadcode:3000/) 註冊帳號練習，目前未確定何種平台)
+# **臨時**分支(前綴)
 <!-- _backgroundColor: #eee; -->
+| 名稱         | 說明                  | from      | merge into                |  |
+| ---------- | ------------------- | --------- | ----------------- | --- |
+| `feature/` | 功能分支，每次開發功能時開立  | `develop` | `develop`         |     |
+| `release/` | 發布分支，每次部署時開立 | `develop` | `develop` `main` |   ⚠️|
+| `hotfix/`  | 熱修分支，處理突發性異常開立     | `main`    | `main` `develop` | ⚠️   |
+###
+- 臨時分支預設在任務結束後**刪除** (也可以保留)
+- 臨時分支會有**來源**與合併**終點**，通常會在合併後刪除
+- ⚠️ `release` 與 `hotfix` 最終都要併入 `develop` 與 `main` (同步修改)
 
-# Dev**Ops**
-![bg right:70% fit](../asset/devops2.png)
-### Development Operations
-##### 一種重視**軟體開發人員**（Dev）和**IT運維技術人員**（Ops）之間溝通合作的文化、運動或慣例 🥲🥲🥲
+# 
+<!-- GitFlow - **freature** -->
+![bg 90% fit](../asset/gitflow2.svg)
 
-#
-![bg 90%](../asset/devops.png)
+# 
+<!-- GitFlow - **release** -->
+![bg 80% fit](../asset/gitflow3.svg)
 
-# **Online** Resources
-- https://www.toptal.com/developers/gitignore
-- https://heidiliu2020.github.io/git-commit-message/
-- https://www.youtube.com/watch?v=0chZFIZLR_0
-## **Offline** Resources
-- https://www.tenlong.com.tw/products/9789864342662
-- https://www.tenlong.com.tw/products/9789865025274
-![bg vertical fit right:28%](../asset/book1.png)
-![bg vertical fit right:28%](../asset/book2.png)
+# 
+<!-- GitFlow - **hotfix** -->
+![bg 70% fit](../asset/gitflow4.svg)
 
+# DEMO - **GitFlow**
+![bg left:60%](https://picsum.photos/720?image=576)
+
+# 
+<!-- Git**Hub** Flow -->
+![bg](../asset/githubflow2.png)
+
+# 
+<!-- Git**Hub** Flow -->
+![bg](../asset/gitflow5.png)
+![bg](../asset/githubflow1.png)
+
+# **OAD** Workflow ?
+![bg right:60%](https://picsum.photos/720?image=596)
+- Git ?
+- Git Server ?
+- Work Flow ?
+- SSDLC ?
+<!-- _class: invert -->
+
+# **Online** Reources
+![bg left:35%](https://picsum.photos/720?image=640)
+- [Git Flow 是什麼？為什麼需要這種東西？](https://gitbook.tw/chapters/gitflow/why-need-git-flow)
+- [Gitflow Workflow | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+- [分支的工作流程 | nulab](https://nulab.com/zh-tw/learn/software-development/git-tutorial/git-collaboration/branching-workflows/)
+- [git-flow 備忘清單](https://danielkummer.github.io/git-flow-cheatsheet/index.zh_TW.html#features)
+
+## misc.
+- [別再讓 gitflow 拖累團隊的開發速度](https://blog.hellojcc.tw/the-flaw-of-git-flow/)
+- [可能更好的 gitflow](https://blog.hellojcc.tw/a-better-git-flow/)
 # What's **next** ...
 ##
 |Subject|Keywords|
 |---|---|
-|**Work Flow**|`Git Flow` `GitHub Flow` `OAD Flow?`|
+|**Work Flow**|`Pull Request` `Code Review`|
 |**CI/CD**|`Action` `Pipline` `yaml`|
 |**AI**|`GitHub Copilot CLI` `Commit Message`|
-|**Misc.**|`Pull Request` `Code Review`|
+|**Misc.**|`git svn` `azure devops`|
 
-![bg right:34%](https://picsum.photos/720?image=555)
+![bg right:34%](https://picsum.photos/720?image=575)
 <!-- _class: invert -->
 
-# Home**work** 2
-- Create a account in [Gitea](http://twoadcode:3000/)
-- Back to the local repo
-- Create a branch `B` with your name
-- Add content and then commit
-- Merge `B` into `main`
-- Push to remote* (only `main` or `B` together)
-- Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
+# Home**work**
+- Create a `repo`* on [Gitea](http://twoadcode:3000/) or `local`.
+- Initialize Git Flow.
+- Create a `freature`, make some chages** and finish it.
+- Create a `release`, chage version and finish it.
+- Create a `hotfix`, fix the bug and finish it.
+- Push changes to `remote`.
+- Send `reop`'s url to [Mecer](mailto:mecer.wu@sgs.com).
 ###
-> *version diff warning may appear
-![bg left:20%](https://picsum.photos/720?image=83)
+> *If the `repo` created on `remote`, `clone` it before next step.
+**Create a real project would be a plus.
+⚠️ Make sure the `remote` `repo` is set to `puclic`.
+![bg left:20%](https://picsum.photos/720?image=85)
 
 # 😀 Thank you !
 feel free to ask if you have any other questions.
 ##
 > **OAD** / brian_li / #1429
 brian.li@sgs.com
-![bg right:60%](https://picsum.photos/720?image=715)
+![bg right:60%](https://picsum.photos/720?image=716)
