@@ -17,3 +17,5 @@
 - https://markdown.tw/
 - https://marp.app/
 - https://picsum.photos/
+- https://www.mermaidchart.com/
+- https://obsidian.md/
