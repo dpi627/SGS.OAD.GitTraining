@@ -18,8 +18,9 @@ git --section 03 -workflow "git flow" :|
 # **A**genda
 
 - Work Flow
-- Pull Request
-- Code Review
+    - Git Flow
+    - GitHub Flow
+- Demo
 - Resources
 - Homework
 ![bg left:60%](https://picsum.photos/720?image=152)
