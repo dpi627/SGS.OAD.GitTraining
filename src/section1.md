@@ -157,7 +157,7 @@ git log --oneline --graph
 ![bg right:40%](https://picsum.photos/720?image=444)
 <!-- _class: invert -->
 
-# Home**work** 1
+# Home**work**
 - Install* Git from https://git-scm.com/download/win
 - Install* a GUI or use CLI
 - Clone repo from http://twoadcode:3000/brian_li/demoGit.git

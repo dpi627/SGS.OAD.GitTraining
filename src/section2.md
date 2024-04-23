@@ -185,7 +185,7 @@ git pull
 ![bg right:34%](https://picsum.photos/720?image=555)
 <!-- _class: invert -->
 
-# Home**work** 2
+# Home**work**
 - Create a account in [Gitea](http://twoadcode:3000/)
 - Back to the local repo
 - Create a branch `B` with your name
