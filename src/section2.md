@@ -28,14 +28,14 @@ git --section 02 -branch "remote repo" :(
 # CLI - **Branch**
 |指令|中文|簡述|
 |---|---|---|
-|**branch**|分支|操作分支*|
-|**checkout**|簽出|切換指定分支**|
+|**branch**|分支|分支相關操作|
+|**checkout**|簽出|切換指定分支*|
 |**merge**|合併|以**目前分支**併吞其他分支|
 |**rebase**|重設|看不到合併提交，更簡潔|
-###
-> *Git 指令永遠都是針對 `目前分支` 進行操作
-**`2.23` 之後提供 `switch` 取代 `checkout`
-⚠️切換分支時，如有未提交修改會警告
+> *語意上應該是 `checkout` **`to`** `{another-branch}`
+`2.23` 之後提供 `switch` 取代 `checkout`
+⚠️切換分支時，如有**未提交修改**會警告
+⚠️Git 指令永遠都是針對 `目前分支` 進行操作
 ![bg right:30%](https://picsum.photos/720?image=543)
 
 # DEMO - **Branch**
@@ -52,7 +52,8 @@ git switch dev
 ```powershell
 git merge dev
 ```
-> *⚠️注意當前分支是否為 `main`。除了 `merge` 還有 `rebase`。只要合併就有機率產生衝突。
+> *注意當前分支是否為 `main`
+⚠️只要合併就有機率產生衝突 (conflict)
 ![bg left:33%](../asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
@@ -66,21 +67,22 @@ git merge dev
 ![bg right fit vertical](../asset/rebase1.svg)
 ![bg right fit](../asset/rebase2.svg)
 ###### Remember `rebase` can alter the commit history. This can be **dangerous** if not done properly, especially with branches that others are working on.
-團隊開發沒事不要 `rebase`，除非大家都很熟
+團隊開發沒事不要 `rebase`，除非大家都很熟悉操作
 ###### https://needoneapp.medium.com/git-merge-vs-git-rebase-17392c4d870d
+
+#
+<!-- Git - cherry-pick -->
+![bg fit](../asset/cherrypick3.jpg)
+![bg fit](../asset/cherrypick2.jpg)
 
 # Resolving **conflict**
 ![bg right:60% fit vertical](../asset/conflict1.png)
 ![bg right 95% vertical](../asset/conflict2.png)
-##### 有合併就有**衝突**
+##### 合併有機率**衝突**
 - 使用 `<` `=` `>` 標註
 - 修改到正確即可
 
 https://gitbook.tw/chapters/branch/fix-conflict
-
-#
-![bg fit](../asset/cherrypick3.jpg)
-![bg fit](../asset/cherrypick2.jpg)
 
 #
 ![bg fit 90%](../asset/allarea.png)
@@ -89,7 +91,7 @@ https://gitbook.tw/chapters/branch/fix-conflict
 ##
 |指令|中文|簡述|
 |---|---|---|
-|**remote**|遠端|管理遠端分支*|
+|**remote**|遠端|管理遠端相關操作*|
 |**push**|推送|上傳修改資料到遠端|
 |**pull**|拉取|下載修改資料到本地|
 |**fetch**|擷取|下載修改資料到**追蹤分支**|
@@ -110,7 +112,7 @@ git push -u origin main
 ```powershell
 git pull
 ```
-> *設定上游為 `origin/main`，未來 `push` 即可
+> *`-u` 設定上游為 `origin/main`，未來 `push` 即可
 ![bg left:33%](../asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
@@ -135,6 +137,7 @@ git pull
 # Git - **push**
 ![bg right:70% fit](../asset/push1.png)
 ###### 版本如與 `remote` 有差異會**警告**
+###### 如**警告**請先 `pull`
 
 # Why need **fetch** ?
 - **查看遠端更新**
@@ -177,25 +180,25 @@ git pull
 ##
 |Subject|Keywords|
 |---|---|
-|**Work Flow**|`Git Flow` `GitHub Flow` `OAD Flow?`|
-|**CI/CD**|`Action` `Pipline` `yaml`|
-|**AI**|`GitHub Copilot CLI` `Commit Message`|
-|**Misc.**|`Pull Request` `Code Review`|
+|**Work Flow**|`Git Flow` `GitHub Flow` `Other Workflow`|
+|**SSDLC**|`OAD Work Flow ?`|
+|**Misc.**|`gitignore`|
 
-![bg right:34%](https://picsum.photos/720?image=555)
+![bg right:30%](https://picsum.photos/720?image=554)
 <!-- _class: invert -->
 
 # Home**work**
 - Create a account in [Gitea](http://twoadcode:3000/)
 - Back to the local repo
 - Create a branch `B` with your name
-- Add content and then commit
-- Merge `B` into `main`
-- Push to remote* (only `main` or `B` together)
+- Make some changes and commit
+- Merge `B` into `main`*
+- Push to remote** (only `main` or `B` together)
 - Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
 ###
-> *version diff warning may appear
-![bg left:20%](https://picsum.photos/720?image=83)
+> *make sure the `HEAD` is pointed on `main`
+**version diff warning may appear
+![bg left:33%](https://picsum.photos/720?image=83)
 
 # 😀 Thank you !
 feel free to ask if you have any other questions.

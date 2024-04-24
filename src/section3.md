@@ -1,5 +1,5 @@
 ﻿---
-marp: true
+marp: false
 paginate: true
 headingDivider: 1
 footer: git-section-`03`
@@ -83,10 +83,10 @@ git switch develop
 
 # **常駐**分支
 ![bg left:22%](https://picsum.photos/720?image=168)
-| 名稱        | 說明                  |tag|
-| --------- | ------------------- |--|
-| `main`    | 主要分支，每個節點都可以發布到正式環境 |✅|
-| `develop` | 開發分支，每次開發功能都應該從這裡開始 ||
+|         | 名稱 | 說明                  |提交|tag|
+| --------- | ---- | ------------ |--|--|
+| `main`    | 主要 | 每個節點都可以發布到正式環境 |❌|✅|
+| `develop` | 開發 | 每次開發功能都應該從這裡開始 |❌||
 ###
 - `main` 一般會設定保護，只有特定權限或角色允許操作
 - `main` 上面的節點通常會加上 `tag` 例如標註版本編號

@@ -1,10 +1,11 @@
 ﻿# Git 心得分享與實作
 
-放置內部分享資料
+放置分享資料，包含
 
-# Architecture
+- 原始檔案 `markdown`
+- 發佈版本 `pdf`
 
-專案架構如下
+# 專案架構
 
 ```c
 📁 asset        //圖檔
@@ -13,7 +14,7 @@
 📄 README.md    //本檔案
 ```
 
-# Resources
+# 參考資料
 - https://markdown.tw/
 - https://marp.app/
 - https://picsum.photos/
