@@ -146,6 +146,7 @@ git switch develop
 - [Gitflow Workflow | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 - [分支的工作流程 | nulab](https://nulab.com/zh-tw/learn/software-development/git-tutorial/git-collaboration/branching-workflows/)
 - [git-flow 備忘清單](https://danielkummer.github.io/git-flow-cheatsheet/index.zh_TW.html#features)
+- [團隊協作 Git Flow](https://enginebai.medium.com/git-flow-60b9466e9942)
 
 ## misc.
 - [別再讓 gitflow 拖累團隊的開發速度](https://blog.hellojcc.tw/the-flaw-of-git-flow/)
