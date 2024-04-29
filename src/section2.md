@@ -29,7 +29,7 @@ git --section 02 -branch "remote repo" :(
 |指令|中文|簡述|
 |---|---|---|
 |**branch**|分支|分支相關操作|
-|**checkout**|簽出|切換指定分支*|
+|**checkout**|檢出|切換指定分支*|
 |**merge**|合併|以**目前分支**併吞其他分支|
 |**rebase**|重設|看不到合併提交，更簡潔|
 > *語意上應該是 `checkout` **`to`** `{another-branch}`
@@ -56,6 +56,17 @@ git merge dev
 ⚠️只要合併就有機率產生衝突 (conflict)
 ![bg left:33%](../asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
+
+# Git - **checkout**
+![bg right:60% 95%](../asset/checkout.svg)
+- `檢出`特定分支
+- 也稱`簽出`/`切換`分支
+- 等同取得分支資料
+- 取得`HEAD`版本資料
+
+⚠️切換分支後，實體資料會立刻被替換為分支版本內容
+
+⚠️`2.23` 後可用 `switch`
 
 # Git - **merge**
 ![bg right fit vertical](../asset/merge1.png)
@@ -104,7 +115,7 @@ https://gitbook.tw/chapters/branch/fix-conflict
 ```powershell
 git remote add origin https://xxx.yyy/zzz.git
 ```
-推送資料* (推送分支)
+推送資料並設定 `upstream`* (上游)
 ```powershell
 git push -u origin main
 ```
@@ -112,7 +123,7 @@ git push -u origin main
 ```powershell
 git pull
 ```
-> *`-u` 設定上游為 `origin/main`，未來 `push` 即可
+> *透過 `clone` 取得的 `repo` 預設已有 `upstream`
 ![bg left:33%](../asset/ignore.jpg)
 <!-- _backgroundColor: #ddd -->
 
