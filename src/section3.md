@@ -1,5 +1,5 @@
 ﻿---
-marp: false
+marp: true
 paginate: true
 headingDivider: 1
 footer: git-section-`03`
@@ -155,7 +155,7 @@ git switch develop
 |Subject|Keywords|
 |---|---|
 |**Work Flow**|`Pull Request` `Code Review`|
-|**CI/CD**|`Action` `Pipline` `yaml`|
+|**CI/CD**|`Actions` `Pipline` `yaml`|
 |**AI**|`GitHub Copilot CLI` `Commit Message`|
 |**Misc.**|`git svn` `azure devops`|
 
@@ -165,9 +165,9 @@ git switch develop
 # Home**work**
 - Create a `repo`* on [Gitea](http://twoadcode:3000/) or `local`.
 - Initialize Git Flow.
-- Create a `freature`, make some chages** and finish it.
+- Create a `freature`, make chages** and finish it.
 - Create a `release`, chage version and finish it.
-- Create a `hotfix`, fix the bug and finish it.
+- Create a `hotfix`, pretend fix bugs and finish it.
 - Push changes to `remote`.
 - Send `reop`'s url to [Mecer](mailto:mecer.wu@sgs.com).
 ###
