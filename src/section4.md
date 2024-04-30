@@ -64,6 +64,12 @@ git --section 04 -workflow "pull request" ;{
 >*server 意指 Gitea GitHub 或 Azure DevOps
 **依照討論結果，也可能拒絕合併再修正
 
+#
+![bg 80%](../asset/Git-PR.svg)
+
+# Gitea **Organization**
+![bg right:66%](../asset/org.webp)
+
 # DEMO on **Gitea**
 ![bg right:60%](https://picsum.photos/720?image=76)
 - ### Pull Request
