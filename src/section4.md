@@ -30,7 +30,7 @@ git --section 04 -workflow "pull request" ;{
 ![bg left:33%](https://picsum.photos/720?image=323)
 ||Big|Samll|Dragon|
 |-|-|-|-|
-|**PM**|Jeff/Lawrence|Jeff|Brian|
+|**PM**|Jeff/Lawrence|Jeff|Jeff|
 |**SA**|Mecer/Amy|Mecer|Brian|
 |**SD**|Mecer/Amy|Mecer/Brian|Brian|
 |**PG**|Birdie/Neil/Brian|Brian|Brian|
