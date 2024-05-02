@@ -99,15 +99,17 @@ https://gitbook.tw/chapters/branch/fix-conflict
 ![bg fit 90%](../asset/allarea.png)
 
 # CLI - **Remote**
-##
+
 |指令|中文|簡述|
 |---|---|---|
-|**remote**|遠端|管理遠端相關操作*|
+|**clone**|複製|下載整個遠端repo*|
+|**remote**|遠端|管理遠端相關操作**|
 |**push**|推送|上傳修改資料到遠端|
 |**pull**|拉取|下載修改資料到本地|
 |**fetch**|擷取|下載修改資料到**追蹤分支**|
-###
-> *遠端 `repo` 預設別名為 `origin`
+
+> *`clone` 取得的 repo 預設非 owner 無法 `push`
+**遠端 `repo` 預設別名為 `origin`
 ![bg right:33%](https://picsum.photos/720?image=550)
 
 # DEMO - **Remote**
@@ -160,6 +162,11 @@ git pull
 ![bg vertical left:50% fit](../asset/fetch1.png)
 ![bg left:50% fit](../asset/fetch2.png)
 
+# Clone
+![bg right:78% 95%](../asset/clone.svg)
+
+# fork
+
 # Git **Sever**/**Service**
 ###
 |[Gitea](https://about.gitea.com/)✅|[Azure DevOps](https://dev.azure.com/)✅|[GitHub](https://github.com/)☑️|[GitLab](https://about.gitlab.com/)|
@@ -200,16 +207,19 @@ git pull
 
 # Home**work**
 - Create a account in [Gitea](http://twoadcode:3000/)
-- Back to the local repo
+- Create your own remote repo or `fork` [demoGit](http://twoadcode:3000/brian_li/demoGit)
+- Clone the remote repo (to local)
 - Create a branch `B` with your name
 - Make some changes and commit
-- Merge `B` into `main`*
-- Push to remote** (only `main` or `B` together)
+- Merge `B` into `main`**
+- Push to remote*** (only `main` or `B` together)
 - Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
-###
-> *make sure the `HEAD` is pointed on `main`
-**version diff warning may appear
+
+> *`fork` = Copy the repo to your own account
+**make sure the `HEAD` is pointed on `main`
+***version diff warning may appear
 ![bg left:33%](https://picsum.photos/720?image=83)
+
 
 # 😀 Thank you !
 feel free to ask if you have any other questions.
