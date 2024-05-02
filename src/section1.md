@@ -28,13 +28,13 @@ git --section 01 -cli -demo "local repo" :D
 |指令|中文|簡述|
 |---|---|---|
 |**init**|初始化|在 `local` 建立 `repo` 與預設分支*|
-|**clone**|複製|下載整個 `remote repo` 到 `local`|
 |**status**|狀態|檢視目前 `repo` 狀態|
 ###
 > *[預設分支](https://www.ithome.com.tw/news/140094)後來由 `master` 改為 `main`
 ![bg right:33%](https://picsum.photos/720?image=609)
 
 # DEMO - **Repository**
+![bg left:33%](../asset/ignore.jpg)
 本地初始化
 ```powershell
 git init
@@ -42,11 +42,7 @@ git init
 ```powershell
 git status
 ```
-下載遠端 `repo`
-```powershell
-git clone https://xxx.yyy/zzz.git
-```
-![bg left:33%](../asset/ignore.jpg)
+
 <!-- _backgroundColor: #ddd -->
 
 # Repository **.git**
@@ -160,14 +156,13 @@ git log --oneline --graph
 # Home**work**
 - Install* Git from https://git-scm.com/download/win
 - Install* a GUI or use CLI
-- Clone repo from http://twoadcode:3000/brian_li/demoGit.git
-- Create your own directory `D` (with your name)
-- Create a text file `T` in `D`, such as `*.txt` `*.sql` `*.js` `*.cs`
+- Create a text file `T`, such as `*.txt` `*.sql` `*.js` `*.cs`
 - Write something in `T` and save
-- Add `T` to the stage then commit
+- Add `T` to the stage then commit**
 - Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
 ###
 > *probably need IT support
+**you can also try `revert` `reset` at same time
 ![bg left:20%](https://picsum.photos/720?image=537)
 
 
