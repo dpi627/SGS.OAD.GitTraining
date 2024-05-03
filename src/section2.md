@@ -142,15 +142,18 @@ git pull
 #
 ![bg 80%](../asset/trankingBranch.png)
 
+# Git - **push**
+![bg right:70% fit](../asset/push1.png)
+###### 上傳資料
+###### 版本如與 `remote` 有差異會跳**警告**
+###### 如**警告**請先同步資料 `pull` or `fetch`
+
 # Git - **pull**
 ![bg 80% right:70% vertical](../asset/pull3.png)
 ![bg 70% fit](../asset/pull4.png)
 ###### = `fetch` + `merge`
-
-# Git - **push**
-![bg right:70% fit](../asset/push1.png)
-###### 版本如與 `remote` 有差異會**警告**
-###### 如**警告**請先 `pull`
+###### 下載更新資料
+###### **協同作業**期間會不斷執行，確保本地資料有同步更新
 
 # Why need **fetch** ?
 - **查看遠端更新**
@@ -162,10 +165,14 @@ git pull
 ![bg vertical left:50% fit](../asset/fetch1.png)
 ![bg left:50% fit](../asset/fetch2.png)
 
-# Clone
+# Git **clone**
 ![bg right:78% 95%](../asset/clone.svg)
 
-# fork
+###### 下載Repo
+###### 通常**開發之前**執行一次
+
+# Repo **Fork**
+![bg left:78% 95%](../asset/fork.svg)
 
 # Git **Sever**/**Service**
 ###
@@ -179,7 +186,7 @@ git pull
 # Dev**Ops**
 ![bg right:70% fit](../asset/devops2.png)
 ### Development Operations
-##### 一種重視**軟體開發人員**（Dev）和**IT運維技術人員**（Ops）之間溝通合作的文化、運動或慣例 🥲🥲🥲
+##### 一種重視**軟體開發人員**（Dev）和**IT運維技術人員**（Ops）之間溝通合作的文化、運動或慣例
 
 #
 ![bg 90%](../asset/devops.png)
