@@ -215,7 +215,7 @@ git pull
 # Home**work**
 - Create a account in [Gitea](http://twoadcode:3000/)
 - Create your own remote repo or `fork` [demoGit](http://twoadcode:3000/brian_li/demoGit)
-- Clone the remote repo (to local)
+- Clone the repo (to local)
 - Create a branch `B` with your name
 - Make some changes and commit
 - Merge `B` into `main`**
