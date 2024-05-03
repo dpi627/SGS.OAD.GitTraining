@@ -24,7 +24,7 @@ git --section 04 -workflow "pull request" ;{
 - Homework
 
 # <!-- workflow -->
-![bg fit](../asset/workflow.png)
+![bg fit 90%](../asset/workflow.png)
 
 # Role**s**
 ![bg left:33%](https://picsum.photos/720?image=323)
@@ -37,6 +37,28 @@ git --section 04 -workflow "pull request" ;{
 |**QA**|Mecer/Amy/BU|Brian|Brian|
 > 角色種類與人員數量配置因專案大小而異，沒有絕對標準，例如也可能有 **DBA** 或 **ART** 等
 
+# Project **Structure**
+![bg right:40%](https://picsum.photos/720?image=517)
+```
+📁Solution
+    📁.git、.svn
+    📄.gitignore
+    📄*.sln
+    📁Project
+        📄*.csproj
+        📄source-code.cs
+    📁Doc
+        📁PM
+            📄minutes、minutes
+        📁SA
+            📄flows、ER-model
+        📁SD
+            📄prototype、table-schema
+        📁PG
+            📄test-report、release-note
+        📁MISC
+```
+
 #
 ![bg](../asset/workflow2.png)
 
@@ -47,52 +69,59 @@ git --section 04 -workflow "pull request" ;{
 ######
 - 開發者通常在**個人分支**上開發
 - 完成開發後需合併回 `main`
-- 以防萬一，合併之前應該要接受**檢查**
+- 合併之前應該要接受**檢查**
 - 通知**專案負責人**或**其他工程師**
 - 經過**檢查**、**討論**或**修改**才進行合併
 - 通常由**特殊權限**或**角色**進行合併
 
 # Pull Request - **How**
 ![bg left:33%](https://picsum.photos/720?image=290)
-- `main` branch is usually protected
 - create a branch `A`, make changes and commit
-- push `A` to remote repo, then go to server*
+- push `A` to remote, then go to server*
 - create a **PR** (pull request) on server
-- discuss = **code review**
+- discuss ≈ **code review**
 - approve** = merge `A` into `main`
 ######
 >*server 意指 Gitea GitHub 或 Azure DevOps
-**依照討論結果，也可能拒絕合併再修正
+**依照討論結果可能再修正，提交會合併同一 PR
 
 #
 ![bg 80%](../asset/Git-PR.svg)
 
 # Gitea **Organization**
-![bg right:66%](../asset/org.webp)
+![bg left:66%](../asset/org.webp)
+- 團隊協作
+- 集中管理
+- 權限控管
+
+[DEMO ORG](http://twoadcode:3000/OAD) on **Gitea** (with a demo repo)
 
 # DEMO on **Gitea**
 ![bg right:60%](https://picsum.photos/720?image=76)
 - ### Pull Request
-- ### Code Review
-
+    Create
+    Comment
+    Code Review ?
+    Merge Commit
+###
 > ⚠️建議學習 `Markdown`
 
 # **Mark**down
-![bg left:60% 90%](../asset/md.jpg)
+![bg left:64% 95%](../asset/md2.png)
 | 優點  | 缺點 |
 |------|-----|
 |簡潔易讀|學習曲線|
 |跨平台|排版限制|
-|生態系|非標準化|
+|生態系|軟體支援|
 
-> support:
+> support：
 `GitHub` `Gitea` `Jupyter Notebook` `Notion` `GPT`
 
 # Code **Review**
 ![bg right:20%](https://picsum.photos/720?image=743)
 | 優點(品質提升👍)                | 缺點(額外成本🔻)                                         |
 |----------------------|----------------------------------------------|
-| 發現並修正錯誤        | 可能引起開發者之間的**衝突**或**緊張               |**
+| 發現並修正錯誤        | 可能引起開發者之間的**衝突**或**緊張**     |
 | 促進知識分享和團隊合作| 可能產生**過多的**討論和評論                      |
 | 學習機會            | 可能會導致**拖延**和**延遲**項目進度                 |
 | 提高代碼一致性        | 可能**忽視**小錯誤和問題，導致低效率             |
