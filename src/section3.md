@@ -17,6 +17,7 @@ git --section 03 -workflow "git flow" :|
 
 # **A**genda
 
+- .gitignore
 - Work Flow
     - Git Flow
     - GitHub Flow
@@ -24,6 +25,15 @@ git --section 03 -workflow "git flow" :|
 - Resources
 - Homework
 ![bg left:60%](https://picsum.photos/720?image=152)
+
+# .git**ignore**
+![bg right:40%](https://picsum.photos/720?image=102)
+- 檔案名稱就叫 `.gitignore`
+- 與 `.git` 目錄放在一起
+- 可以使用任何**文字編輯器**產生或編輯
+- 排除不需要版本控制的檔案或目錄，例如**編譯生成檔案**、**下載套件**、**個人設定檔**、**臨時性文件**、**過大的檔案**或**日誌文件** ... 等等
+- [gitignore.io](https://www.toptal.com/developers/gitignore/) 線上生成網站
+- 多數服務已於建立 Repo 時提供此功能
 
 # Work**flow**
 ![bg right](https://picsum.photos/720?image=153)
@@ -38,7 +48,7 @@ git --section 03 -workflow "git flow" :|
 - Forking Workflow
 
 # Git **Flow**
-![bg right:60% fit](../asset/gitflow.png)
+![bg right:62% fit](../asset/gitflow.png)
 - 於 2010 年[發表](https://nvie.com/posts/a-successful-git-branching-model/)
 - 一種 Git 分支模型
 - 包含**常駐**與**臨時**分支
@@ -122,6 +132,12 @@ git switch develop
 
 # DEMO - **GitFlow**
 ![bg left:60%](https://picsum.photos/720?image=576)
+- init
+- feature
+- release
+- hotfix
+######
+> use SourceTree
 
 # 
 <!-- Git**Hub** Flow -->
@@ -149,6 +165,7 @@ git switch develop
 - [團隊協作 Git Flow](https://enginebai.medium.com/git-flow-60b9466e9942)
 
 ## misc.
+- [gitignore 官方文件](https://git-scm.com/docs/gitignore/zh_HANS-CN)
 - [別再讓 gitflow 拖累團隊的開發速度](https://blog.hellojcc.tw/the-flaw-of-git-flow/)
 - [可能更好的 gitflow](https://blog.hellojcc.tw/a-better-git-flow/)
 # What's **next** ...
