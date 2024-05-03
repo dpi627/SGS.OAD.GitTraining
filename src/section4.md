@@ -28,13 +28,13 @@ git --section 04 -workflow "pull request" ;{
 
 # Role**s**
 ![bg left:33%](https://picsum.photos/720?image=323)
-||Big|Samll|Dragon|
+||Large/Complex|Small|🐉|
 |-|-|-|-|
-|**PM**|Jeff/Lawrence|Jeff|Jeff|
+|**PM**|Jeff/Lawrence|Jeff|Brian|
 |**SA**|Mecer/Amy|Mecer|Brian|
 |**SD**|Mecer/Amy|Mecer/Brian|Brian|
 |**PG**|Birdie/Neil/Brian|Brian|Brian|
-|**QA**|Mecer/Amy/BU|Brian|---|
+|**QA**|Mecer/Amy/BU|Brian|Brian|
 > 角色種類與人員數量配置因專案大小而異，沒有絕對標準，例如也可能有 **DBA** 或 **ART** 等
 
 #
@@ -85,19 +85,19 @@ git --section 04 -workflow "pull request" ;{
 |跨平台|排版限制|
 |生態系|非標準化|
 
-> `GitHub` `Gitea` `Jupyter Notebook` `Notion` `GPT`
+> support:
+`GitHub` `Gitea` `Jupyter Notebook` `Notion` `GPT`
 
 # Code **Review**
 ![bg right:20%](https://picsum.photos/720?image=743)
-| 優點(品質🔺)                | 缺點(額外成本)                                         |
+| 優點(品質提升👍)                | 缺點(額外成本🔻)                                         |
 |----------------------|----------------------------------------------|
-| 提高代碼一致性        | 消耗時間和人力                               |
-| 發現並修正錯誤        | 可能引起開發者之間的衝突或緊張               |
-| 促進知識分享和團隊合作| 可能產生過多的討論和評論                      |
-| 學習機會            | 可能會導致拖延和延遲項目進度                 |
-| 提高代碼一致性        | 可能忽視小錯誤和問題，導致低效率             |
+| 發現並修正錯誤        | 可能引起開發者之間的**衝突**或**緊張               |**
+| 促進知識分享和團隊合作| 可能產生**過多的**討論和評論                      |
+| 學習機會            | 可能會導致**拖延**和**延遲**項目進度                 |
+| 提高代碼一致性        | 可能**忽視**小錯誤和問題，導致低效率             |
 
-⚠️必須在同一種架構下才有可能實現，包括 `Language` `FrameWork` `Architecture Pattern` `Design Pattern` `Packages` ... 等等
+⚠️開發架構有收斂比較可能實現，包括 `Language` `FrameWork` `Architecture Pattern` `Design Pattern` `Packages` ... 等等
 
 # **Online** Reources
 ![bg left:35%](https://picsum.photos/720?image=649)
@@ -113,19 +113,20 @@ git --section 04 -workflow "pull request" ;{
 ![bg right:34%](https://picsum.photos/720?image=797)
 |Subject|Keywords|
 |---|---|
-|**CI/CD**|`Actions` `Pipline` `yaml`|
+|**CI/CD**|`Runner` `Actions` `Pipline` `yaml`|
 |**AI**|`GitHub Copilot CLI` `Commit Message`|
 |**Misc.**|`git svn` `azure devops`|
 <!-- _class: invert -->
 
 # Home**work**
 ![bg left:20%](https://picsum.photos/720?image=888)
-- Create a `repo`* on [Gitea](http://twoadcode:3000/) or `local`
+- Create a `repo` on [Gitea](http://twoadcode:3000/) or `fork` [demoTeamWork](http://twoadcode:3000/OAD/demoTeamWork)
+- Clone the `repo` (to local)
 - Create branch `A`, make chages and commit
 - Push `A` to `remote`
-- Go to Gitea, create a pull request*
-- Find someone to review or just commit yourself
-- Send `reop`'s url to [Mecer](mailto:mecer.wu@sgs.com).
+- Go to Gitea, create a `pull request`**
+- Find someone to review or just approve yourself
+- Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
 ###
 > *If the `repo` created on `remote`, `clone` it before next step.
 **Try `Markdown` during pull request creation
