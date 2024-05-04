@@ -19,6 +19,7 @@ git --section 05 -cicd "github actions" :/
 - CI/CD
 - Gitea Actions
 - YAML
+- Pipline
 - Demo
 - Resources
 
