@@ -15,121 +15,105 @@ git --section 05 -cicd "github actions" :/
 > **OAD** / brian_li
 
 # **A**genda
-![bg left:60%](https://picsum.photos/720?image=118)
+![bg left:60%](https://picsum.photos/720?image=196)
 - CI/CD
 - Gitea Actions
-- YAML
-- Pipline
+    Runner
+    YAML
 - Demo
 - Resources
 
-# <!-- cicd -->
+# CI **/** CD - 持續整合 **/** 部署
+![bg right:25%](https://picsum.photos/720?image=296)
+###### 一種軟體開發實踐方法，目的在**自動化**和**簡化**開發、測試和部署**過程**
+###
+- 持續**整合**（Continuous Integration）：
+    程式碼頻繁地合併到 repo
+    每次合併自動觸發測試和建置流程
+- 持續**部署**/交付（Continuous Deployment/Delivery）
+    自動化部署程式碼到測試或正式環境
+    持續交付軟體更新至使用者
+
+#
 ![bg fit](../asset/cicd2.png)
 
-# <!-- cicd -->
-![bg](../asset/cicd.png)
+# Gitea Actions **Act Runner**
+![bg left:60% fit](../asset/cicd.png)
+- 用於執行**工作流程**
+- 可以是**虛擬機**、**實體機**或者**容器**
+- 官方有提供，也可自建
+- 獨立專案，Go 撰寫
 
-# <!-- cicd -->
-![bg right:66% 95%](../asset/actions.svg)
-## Gitea **Actions**
+# Gitea **Actions**
+![bg right:65% 95%](../asset/actions.svg)
+- 致敬
+    [GitHub Actions](https://docs.github.com/en/actions)
+- 大部分相容
+- 使用 **YAML** 撰寫
+###
+⚠️`yaml` 可放路徑 `.gitea/workflows/` `.github/workflows/`
+
+
+
+# Sample.**yaml**
+![bg left:33%](https://picsum.photos/720?image=400)
+```yaml
+name: Greetings!  ------------ # workflow name
+
+on: [push, pull]  ------------ # event(s)
+
+jobs:
+  build:    ------------------ # job id**
+    runs-on: windows   ------- # runner label***
+    steps:  ------------------ # action(s)
+      - name: Say Hello   ---- # action name*
+      - run: echo Hello!  ---- # run script
+```
+
+>*`name` is optional
+**`job id` must be unipue
+***`runs-on` should match the runner `label`
+
+# Gitea Actions **Variable**
+![bg right:33%](https://picsum.photos/720?image=411)
+-
+-
+-
+
+# Gitea Actions **Secret**
+![bg left:33%](https://picsum.photos/720?image=426)
+-
+-
+-
+
+# YA**ML**
+![bg right fit](../asset/yaml.png)
+###### **Y**et **A**nother **M**arkup **L**anguage
+- key-value pair 集合
+- value 可以是字串或結構
+- 結構使用縮排定義
+- 不可以用 **Tab**
+- 子節點比父節點縮排更多即可，空白數量**不**重要
+- 支援 UTF-8, UTF-16 and UTF-32
 
 #
-![bg](../asset/workflow2.png)
-
-# Pull Request - **What** & **Why**
-![bg right:33%](https://picsum.photos/720?image=259)
-
-###### A **REQUEST** for ask someone to **PULL** our commits and merge into other branch
-######
-- 開發者通常在**個人分支**上開發
-- 完成開發後需合併回 `main`
-- 以防萬一，合併之前應該要接受**檢查**
-- 通知**專案負責人**或**其他工程師**
-- 經過**檢查**、**討論**或**修改**才進行合併
-- 通常由**特殊權限**或**角色**進行合併
-
-# Pull Request - **How**
-![bg left:33%](https://picsum.photos/720?image=290)
-- `main` branch is usually protected
-- create a branch `A`, make changes and commit
-- push `A` to remote repo, then go to server*
-- create a **PR** (pull request) on server
-- discuss = **code review**
-- approve** = merge `A` into `main`
-######
->*server 意指 Gitea GitHub 或 Azure DevOps
-**依照討論結果，也可能拒絕合併再修正
-
-#
-![bg 80%](../asset/Git-PR.svg)
-
-# Gitea **Organization**
-![bg right:66%](../asset/org.webp)
-
-# DEMO on **Gitea**
-![bg right:60%](https://picsum.photos/720?image=76)
-- ### Pull Request
-- ### Code Review
-
-> ⚠️建議學習 `Markdown`
-
-# **Mark**down
-![bg left:60% 90%](../asset/md.jpg)
-| 優點  | 缺點 |
-|------|-----|
-|簡潔易讀|學習曲線|
-|跨平台|排版限制|
-|生態系|非標準化|
-
-> `GitHub` `Gitea` `Jupyter Notebook` `Notion` `GPT`
-
-# Code **Review**
-![bg right:20%](https://picsum.photos/720?image=743)
-| 優點(品質🔺)                | 缺點(額外成本)                                         |
-|----------------------|----------------------------------------------|
-| 提高代碼一致性        | 消耗時間和人力                               |
-| 發現並修正錯誤        | 可能引起開發者之間的衝突或緊張               |
-| 促進知識分享和團隊合作| 可能產生過多的討論和評論                      |
-| 學習機會            | 可能會導致拖延和延遲項目進度                 |
-| 提高代碼一致性        | 可能忽視小錯誤和問題，導致低效率             |
-
-⚠️必須在同一種架構下才有可能實現，包括 `Language` `FrameWork` `Architecture Pattern` `Design Pattern` `Packages` ... 等等
-
-# **Online** Reources
-![bg left:35%](https://picsum.photos/720?image=649)
-- [與其它開發者的互動 - 使用 Pull Request（PR）](https://gitbook.tw/chapters/github/pull-request)
-- [什麼是 Pull Request?](https://shoujhengduan.medium.com/%E4%BB%80%E9%BA%BC%E6%98%AF-pull-request-b476ee3e0217)
-- [如何進行 Code Review?](https://enginebai.medium.com/code-review-guidelines-b76a859c377c)
-- [淺談Code Review的好處及意義](https://blog.alantsai.net/posts/2019/05/code-review-what-is-code-review-and-why-we-want-to-do-it)
-- [Create Pull Request in Azure DevOps](https://blog.alantsai.net/posts/2019/05/code-review-02-what-is-pull-request-and-how-to-create-it-in-azure-devops)
-- [Markdown 官方教程](https://markdown.com.cn/basic-syntax/)
-
-
-# What's **next** ...
-![bg right:34%](https://picsum.photos/720?image=797)
-|Subject|Keywords|
-|---|---|
-|**CI/CD**|`Actions` `Pipline` `yaml`|
-|**AI**|`GitHub Copilot CLI` `Commit Message`|
-|**Misc.**|`git svn` `azure devops`|
+![bg fit](../asset/yaml_json.png)
 <!-- _class: invert -->
 
-# Home**work**
-![bg left:20%](https://picsum.photos/720?image=888)
-- Create a `repo`* on [Gitea](http://twoadcode:3000/) or `local`
-- Create branch `A`, make chages and commit
-- Push `A` to `remote`
-- Go to Gitea, create a pull request*
-- Find someone to review or just commit yourself
-- Send `reop`'s url to [Mecer](mailto:mecer.wu@sgs.com).
-###
-> *If the `repo` created on `remote`, `clone` it before next step.
-**Try `Markdown` during pull request creation
-⚠️ Make sure the `remote` `repo` is set to `puclic`.
+# DEMO
+![bg right:60%](https://picsum.photos/720?image=744)
+- Actions Enable ?
+- Runner Statuds
+- Create Workflow
+- Test
+
+# **Online** Reources
+![bg left:35%](https://picsum.photos/720?image=676)
+- [與其它開發者的互動 - 使用 Pull Request（PR）](https://gitbook.tw/chapters/github/pull-request)
 
 
 # 😀 Thank you !
-![bg right:60%](https://picsum.photos/720?image=738)
+![bg right:60%](https://picsum.photos/720?image=669)
 feel free to ask if you have any other questions.
 ##
 > **OAD** / brian_li / #1429
