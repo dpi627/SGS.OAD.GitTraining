@@ -35,29 +35,7 @@ git --section 04 -workflow "pull request" ;{
 |**SD**|Mecer/Amy|Mecer/Brian|Brian|
 |**PG**|Birdie/Neil/Brian|Brian|Brian|
 |**QA**|Mecer/Amy/BU|Brian|Brian|
-> 角色種類與人員數量配置因專案大小而異，沒有絕對標準，例如也可能有 **DBA** 或 **ART** 等
-
-# Project **Structure**
-![bg right:40%](https://picsum.photos/720?image=517)
-```
-📁Solution
-    📁.git、.svn
-    📄.gitignore
-    📄*.sln
-    📁Project
-        📄*.csproj
-        📄source-code.cs
-    📁Doc
-        📁PM
-            📄minutes、minutes
-        📁SA
-            📄flows、ER-model
-        📁SD
-            📄prototype、table-schema
-        📁PG
-            📄test-report、release-note
-        📁MISC
-```
+> ⚠️角色種類與人員數量配置因專案大小而異，沒有絕對標準，例如也可能有 **DBA** 或 **ART** 等等
 
 #
 ![bg](../asset/workflow2.png)
@@ -77,32 +55,31 @@ git --section 04 -workflow "pull request" ;{
 # Pull Request - **How**
 ![bg left:33%](https://picsum.photos/720?image=290)
 - create a branch `A`, make changes and commit
-- push `A` to remote, then go to server*
+- push `A` to remote, then go to Git Server
 - create a **PR** (pull request) on server
 - discuss ≈ **code review**
-- approve** = merge `A` into `main`
+- approve = merge `A` into `main`
 ######
->*server 意指 Gitea GitHub 或 Azure DevOps
-**依照討論結果可能再修正，提交會合併同一 PR
+>⚠️依照討論結果可能再修正，提交會併入同一 PR
 
 #
-![bg 80%](../asset/Git-PR.svg)
+![bg 75%](../asset/Git-PR.svg)
 
 # Gitea **Organization**
 ![bg left:66%](../asset/org.webp)
 - 團隊協作
 - 集中管理
 - 權限控管
+###### Repo's **owner**
+`組織` or `自己`
 
-[DEMO ORG](http://twoadcode:3000/OAD) on **Gitea** (with a demo repo)
-
-# DEMO on **Gitea**
+# DEMO **PR**
 ![bg right:60%](https://picsum.photos/720?image=76)
-- ### Pull Request
+- **Intro [ORG on Gitea](http://twoadcode:3000/OAD)**
+- **Pull Request**
     Create
-    Comment
-    Code Review ?
-    Merge Commit
+    Discussion
+    Merge into `main`
 ###
 > ⚠️建議學習 `Markdown`
 
@@ -119,14 +96,14 @@ git --section 04 -workflow "pull request" ;{
 
 # Code **Review**
 ![bg right:20%](https://picsum.photos/720?image=743)
-| 優點(品質提升👍)                | 缺點(額外成本🔻)                                         |
+| 優點(品質提升👍)                | 缺點(額外成本🔻)  |
 |----------------------|----------------------------------------------|
 | 發現並修正錯誤        | 可能引起開發者之間的**衝突**或**緊張**     |
 | 促進知識分享和團隊合作| 可能產生**過多的**討論和評論                      |
 | 學習機會            | 可能會導致**拖延**和**延遲**項目進度                 |
 | 提高代碼一致性        | 可能**忽視**小錯誤和問題，導致低效率             |
 
-⚠️開發架構有收斂比較可能實現，包括 `Language` `FrameWork` `Architecture Pattern` `Design Pattern` `Packages` ... 等等
+⚠️開發架構收斂比較可能實現，包括 `Language` `FrameWork` `Architecture Pattern` `Design Pattern` `Packages` ... 等等
 
 # **Online** Reources
 ![bg left:35%](https://picsum.photos/720?image=649)
@@ -153,13 +130,12 @@ git --section 04 -workflow "pull request" ;{
 - Clone the `repo` (to local)
 - Create branch `A`, make chages and commit
 - Push `A` to `remote`
-- Go to Gitea, create a `pull request`**
-- Find someone to review or just approve yourself
+- Go to Gitea, create a `pull request`
+- Find someone to review* (or just approve yourself)
 - Capture screen and mail to [Mecer](mailto:mecer.wu@sgs.com)
 ###
-> *If the `repo` created on `remote`, `clone` it before next step.
-**Try `Markdown` during pull request creation
-⚠️ Make sure the `remote` `repo` is set to `puclic`.
+> *If the `repo` created by your own, you may add Collaborators for Pull Request Review
+⚠️Try `Markdown` during pull request creation
 
 
 # 😀 Thank you !
