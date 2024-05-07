@@ -55,7 +55,7 @@ git --section 05 -cicd "github actions" :/
 
 
 
-# Sample.**yaml**
+# SimpleAction.**yaml**
 ![bg left:33%](https://picsum.photos/720?image=400)
 ```yaml
 name: Greetings!  ------------ # workflow name
@@ -63,9 +63,9 @@ name: Greetings!  ------------ # workflow name
 on: [push, pull]  ------------ # event(s)
 
 jobs:
-  build:    ------------------ # job id**
-    runs-on: windows   ------- # runner label***
-    steps:  ------------------ # action(s)
+  Greeting:  ----------------- # job id**
+    runs-on: windows  -------- # runner label***
+    steps:   ----------------- # action(s)
       - name: Say Hello   ---- # action name*
       - run: echo Hello!  ---- # run script
 ```
@@ -74,17 +74,33 @@ jobs:
 **`job id` must be unipue
 ***`runs-on` should match the runner `label`
 
-# Gitea Actions **Variable**
+# Gitea Actions **Variables**
 ![bg right:33%](https://picsum.photos/720?image=411)
--
--
--
 
-# Gitea Actions **Secret**
+- 共用變數可儲存於 **Variables**
+- 說明請參考 [官方文件](https://docs.gitea.com/usage/actions/actions-variables)
+- 新增 `FIRST_NAME` = `Brian`
+- 取用 `${{ vars.FIRST_NAME }}`
+###
+```yaml
+run: echo "My first name is ${{ vars.FIRST_NAME }}."
+
+# My first name is Brian.
+```
+
+# Gitea Actions **Secrets**
 ![bg left:33%](https://picsum.photos/720?image=426)
--
--
--
+
+- 機密資訊則儲存於 **Secrets**
+- 說明請參考 [官方文件](https://docs.gitea.com/usage/secrets)
+- 新增 `LAST_NAME` = `****` (儲存後即隱藏)
+- 取用 `${{ secrets.LAST_NAME }}`
+###
+```yaml
+run: echo "My last name is ${{ secrets.LAST_NAME }}."
+
+# My last name is ****.
+```
 
 # YA**ML**
 ![bg right fit](../asset/yaml.png)
@@ -109,8 +125,12 @@ jobs:
 
 # **Online** Reources
 ![bg left:35%](https://picsum.photos/720?image=676)
-- [與其它開發者的互動 - 使用 Pull Request（PR）](https://gitbook.tw/chapters/github/pull-request)
+- [Gitea Actions](https://docs.gitea.com/usage/actions/overview)
+- [GitHub Actions](https://docs.github.com/en/actions)
 
+| [動手學GitHub!](https://www.books.com.tw/products/0010926249)|[AzureDevOps顧問實戰](https://www.books.com.tw/products/0010921349) |
+|-|-|
+|![w:200](../asset/book4.png)| ![w:180](../asset/book3.png)|
 
 # 😀 Thank you !
 ![bg right:60%](https://picsum.photos/720?image=669)
