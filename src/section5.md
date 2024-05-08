@@ -35,7 +35,11 @@ git --section 05 -cicd "github actions" :/
     持續交付軟體更新至使用者
 
 #
-![bg fit](../asset/cicd2.png)
+![bg 90%](../asset/cicd2.png)
+
+# CICD **Flow** & **Result**
+![bg vertical 50%](../asset/cicd.svg)
+![bg vertical 100%](..//asset/cicd_result.png)
 
 # Gitea Actions **Act Runner**
 ![bg left:60% fit](../asset/cicd.png)
@@ -54,6 +58,19 @@ git --section 05 -cicd "github actions" :/
 ⚠️`yaml` 可放路徑 `.gitea/workflows/` `.github/workflows/`
 
 
+# YA**ML**
+![bg right fit](../asset/yaml.png)
+###### **Y**et **A**nother **M**arkup **L**anguage
+- key-value pair 集合
+- value 可以是字串或結構
+- 結構使用縮排定義
+- 不可以用 **Tab**
+- 子節點比父節點縮排更多即可，空白數量**不**重要
+- 支援 UTF-8, UTF-16 and UTF-32
+
+#
+![bg fit](../asset/yaml_json.png)
+<!-- _class: invert -->
 
 # SimpleAction.**yaml**
 ![bg left:33%](https://picsum.photos/720?image=400)
@@ -102,29 +119,16 @@ run: echo "My last name is ${{ secrets.LAST_NAME }}."
 # My last name is ****.
 ```
 
-# YA**ML**
-![bg right fit](../asset/yaml.png)
-###### **Y**et **A**nother **M**arkup **L**anguage
-- key-value pair 集合
-- value 可以是字串或結構
-- 結構使用縮排定義
-- 不可以用 **Tab**
-- 子節點比父節點縮排更多即可，空白數量**不**重要
-- 支援 UTF-8, UTF-16 and UTF-32
-
-#
-![bg fit](../asset/yaml_json.png)
-<!-- _class: invert -->
-
 # DEMO
-![bg right:60%](https://picsum.photos/720?image=744)
+![bg right:60% vertical](https://picsum.photos/720?image=744)
 - Actions Enable ?
 - Runner Statuds
 - Create Workflow
-- Test
+- Push
+- Review Result
 
 # **Online** Reources
-![bg left:35%](https://picsum.photos/720?image=676)
+![bg left:35%](https://picsum.photos/720?image=744)
 - [Gitea Actions](https://docs.gitea.com/usage/actions/overview)
 - [GitHub Actions](https://docs.github.com/en/actions)
 
