@@ -20,10 +20,17 @@ git --quick-start 0 "from zero to git" ✨
 
 # **A**genda
 
-- Version Control
-- What's Git
-- Use Case
-- CLI / GUI
-- Resources
+- **Git**
+  Git Bash
+  Git CLI
+- Gitea
+  
+- Sourcetree
+
+---
+
+![bg right vertical](https://fakeimg.pl/960/?text=status&font=museo)
+![bg](https://fakeimg.pl/960/000/fff)
+![bg](https://fakeimg.pl/960/?text=commit%20-m&font=bebas)
 
 ---
