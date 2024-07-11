@@ -11,7 +11,9 @@ footer: git-`quickstart`
 ```bat
 git quick-start "from zero to git" ✨
 ```
-###
+#
+#
+
 `OAD` **Brian Li**
 
 ---
@@ -26,9 +28,10 @@ git quick-start "from zero to git" ✨
 
 ## 預期**目標**
 
-- 最快速度了解以下項目
-- ![h:30](/asset/sourcetree.png) **Sourcetree** 基礎操作
-- ![h:25](/asset/gitea.png) **Gitea** 基礎功能使用
+- 最**快**度了解以下項目
+- ![w:30](../asset/giticon.png) **Git** 基礎知識入門
+- ![w:30](/asset/sourcetree.png) **Sourcetree** 基礎操作
+- ![w:30](/asset/gitea.png) **Gitea** 基礎功能使用
 
 ---
 
@@ -57,7 +60,7 @@ git quick-start "from zero to git" ✨
 ## **Git**
 
 - 一套開源的分散式版本控制軟體
-- 本地安裝即可使用
+- 本地安裝即可使用，無網路也可用
 
 ## **GitHub**
 
@@ -66,7 +69,7 @@ git quick-start "from zero to git" ✨
 
 ## **Gitea**
 
-- 開源專案，功能與 GitHub 雷同
+- 開源專案，功能與畫面類似 GitHub 
 - 可於封閉網路環境部署，適合企業使用
 
 ---
@@ -79,7 +82,7 @@ git quick-start "from zero to git" ✨
 ![bg](https://fakeimg.pl/960/999/ddd/?text=add)
 ![bg](https://fakeimg.pl/960/?text=commit)
 
-# **Local** 相關常見指令
+# ![w:50](../asset/giticon.png) 常見**指令**說明
 
 ```sh
 # 初始化 local repo (首次執行)
@@ -103,7 +106,7 @@ git commit -m "{message}"
 ![bg](https://fakeimg.pl/960/?text=pull)
 ![bg](https://fakeimg.pl/960/999/ddd/?text=push)
 
-# **Remote** 相關常見指令
+# ![w:50](../asset/giticon.png) 常見**指令**說明
 
 ```sh
 # 下載 remote repo (首次執行)
@@ -123,6 +126,106 @@ git push
 
 ---
 
+![bg right:45% fit](../asset/git-ignore.webp)
 
+# 開始**之前** ... `.gitignore`
+
+- 一個純文字檔
+- 忽略特定目錄或檔案
+- 防止不必要的文件提交
+
+```powershell
+.vs    -------------------- #本地資料
+bin/   -------------------- #編譯檔案
+*.log  -------------------- #日誌
+*.user -------------------- #個人組態
+[Pp]ackages --------------- #套件目錄
+```
+- 建議使用 https://gitignore.io/
+
+>⚠️ 如果版控中途新增此檔，不會影響已經加入版控 `Tracked` 的資料
 
 ---
+
+![bg right](https://picsum.photos/720?image=830)
+
+# ![w:60](../asset/sourcetree.png) Sroucetree
+
+https://www.sourcetreeapp.com/
+
+- 免費可商用的 Git GUI 工具
+- 可執行常見的 Git 操作
+- 查看提交歷史紀錄與分支圖表
+- 適合 Git 初學者，無需記憶 CLI
+- 支援 [Git-Flow](https://gitbook.tw/chapters/gitflow/why-need-git-flow)
+
+---
+
+![bg left](https://picsum.photos/720?image=867)
+
+# ![w:60](../asset/sourcetree.png) Demo
+
+- **下載**與**安裝**
+- **建立** `Create` 本地儲存庫
+- 本地儲存庫**基本操作**
+- **加入** `Add` 本地儲存庫
+
+---
+
+
+![bg right](https://picsum.photos/720?image=844)
+
+# ![w:60](../asset/gitea.png) Gitea
+
+https://about.gitea.com/
+
+- 一個提供 Git repo 託管的網站
+- Go 撰寫、開源、`MIT` 授權
+- 介面類似 GitHub，學習曲線低
+- 適合小型團隊、企業內部使用
+###
+💡 額外提供了許多功能...
+
+`HTTPS` `SSH` `Wiki` `issue tracking` `pull request` `web hooks` `Actions`
+
+---
+
+![bg left](https://picsum.photos/720?image=849)
+
+# ![h:60](../asset/gitea.png) ![h:70](../asset/sourcetree.png) Demo
+
+- ![w:40](../asset/gitea.png) Git Server
+  http://twvoadtpw100004/
+- ![w:40](../asset/gitea.png) **建立**遠端儲存庫
+- ![w:40](../asset/sourcetree.png) **下載** `Clone` 遠端儲存庫
+- ![w:40](../asset/sourcetree.png) 遠端儲存庫**基本操作**
+
+---
+
+### 🌐 **Online** Resources
+- https://learngitbranching.js.org/?locale=zh_TW
+- https://git-scm.com/book/zh-tw/v2/
+- https://gitbook.tw/chapters/gitflow/why-need-git-flow
+- https://github.com/geekan/HowToLiveLonger
+- https://github.com/ByteByteGoHq/system-design-101
+- https://youtu.be/FKXRiAiQFiY?si=5FloUV7xYN-I_MsV
+### 📚 Book**s**
+- https://www.tenlong.com.tw/products/9789864342662
+- https://www.tenlong.com.tw/products/9789865025274
+![bg vertical fit right:28%](../asset/book1.png)
+![bg vertical fit right:28%](../asset/book2.png)
+
+---
+
+![bg right:60%](https://picsum.photos/720?image=885)
+
+# 😀 Thank you !
+
+feel free to ask if you have any other questions
+
+#
+
+🏢 **OAD** 
+👤 Brian Li
+📞 `#1429`
+📧 brian.li@sgs.com
