@@ -28,14 +28,14 @@ git quick-start "from zero to git" ✨
 
 ## 預期**目標**
 
-- 最**快**度了解以下項目
-- ![w:30](../asset/giticon.png) **Git** 基礎知識入門
+- **最快**速度入門以下項目
+- ![w:30](../asset/giticon.png) **Git** 基礎知識
 - ![w:30](/asset/sourcetree.png) **Sourcetree** 基礎操作
 - ![w:30](/asset/gitea.png) **Gitea** 基礎功能使用
 
 ---
 
-![bg left](https://picsum.photos/720?image=820)
+![bg left:60%](https://picsum.photos/720?image=820)
 
 # **A**genda
   
@@ -60,12 +60,12 @@ git quick-start "from zero to git" ✨
 ## **Git**
 
 - 一套開源的分散式版本控制軟體
-- 本地安裝即可使用，無網路也可用
+- 本機安裝即可使用，不需要網路
 
 ## **GitHub**
 
 - 一個提供多種服務的網站
-- 需要註冊方可使用
+- 需要註冊方可使用，使用時需要網路
 
 ## **Gitea**
 
@@ -78,14 +78,14 @@ git quick-start "from zero to git" ✨
 
 ---
 
-![bg right vertical](https://fakeimg.pl/960/?text=status)
+![bg right:40% vertical](https://fakeimg.pl/960/?text=status)
 ![bg](https://fakeimg.pl/960/999/ddd/?text=add)
 ![bg](https://fakeimg.pl/960/?text=commit)
 
 # ![w:50](../asset/giticon.png) 常見**指令**說明
 
 ```sh
-# 初始化 local repo (首次執行)
+# 初始化 local repo (僅初次執行需要)
 git init
 
 # 查看 local repo 狀態
@@ -98,18 +98,18 @@ git add .
 git commit -m "{message}"
 ```
 ###
->`repo`全名為 Respository，也可稱為儲存庫 (不限定只能放程式)
+>💡 `repo` 全名為 Respository，中文常稱為程式庫、儲存庫 (不限定只能放程式)
 
 ---
 
-![bg left vertical](https://fakeimg.pl/960/999/ddd/?text=clone)
+![bg left:40% vertical](https://fakeimg.pl/960/999/ddd/?text=clone)
 ![bg](https://fakeimg.pl/960/?text=pull)
 ![bg](https://fakeimg.pl/960/999/ddd/?text=push)
 
 # ![w:50](../asset/giticon.png) 常見**指令**說明
 
 ```sh
-# 下載 remote repo (首次執行)
+# 下載 remote repo (僅初次執行需要)
 git clone {htt://url/repo.git}
 
 # 拉取 remote repo 提交紀錄
@@ -122,7 +122,7 @@ git push
 ###
 
 - 擷取 `fetch` 也是一個重要指令
-- 追蹤分支 `Tracking Branch` 觀念可一起進行了解
+- 追蹤分支 `Tracking Branch` 可同步了解
 
 ---
 
@@ -141,7 +141,7 @@ bin/   -------------------- #編譯檔案
 *.user -------------------- #個人組態
 [Pp]ackages --------------- #套件目錄
 ```
-- 建議使用 https://gitignore.io/
+- [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/git-ignore.mp4) 建議使用 https://gitignore.io/
 
 >⚠️ 如果版控中途新增此檔，不會影響已經加入版控 `Tracked` 的資料
 
@@ -165,10 +165,17 @@ https://www.sourcetreeapp.com/
 
 # ![w:60](../asset/sourcetree.png) Demo
 
-- **下載**與**安裝**
-- **建立** `Create` 本地儲存庫
+- [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/st-download.mp4) **下載** Sourcetree
+- [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/st-install.mp4) **安裝** Sourcetree*
+- [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/st-create.mp4) **建立** `Create` 本地儲存庫
 - 本地儲存庫**基本操作**
-- **加入** `Add` 本地儲存庫
+  [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/st-add-and-commit.mp4) 新增檔案，提交變更
+  [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/st-mdf-commit.mp4) 修改檔案，提交變更
+- [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/st-add.mp4) **加入** `Add` 本地儲存庫
+
+###
+
+>*⚠️安裝過程需輸入帳號與email
 
 ---
 
@@ -194,11 +201,18 @@ https://about.gitea.com/
 
 # ![h:60](../asset/gitea.png) ![h:70](../asset/sourcetree.png) Demo
 
-- ![w:40](../asset/gitea.png) Git Server
+![w:40](../asset/gitea.png) **Git Server**
   http://twvoadtpw100004/
-- ![w:40](../asset/gitea.png) **建立**遠端儲存庫
-- ![w:40](../asset/sourcetree.png) **下載** `Clone` 遠端儲存庫
-- ![w:40](../asset/sourcetree.png) 遠端儲存庫**基本操作**
+  [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/gt-create-repo.mp4) **建立**遠端儲存庫
+###
+![w:40](../asset/sourcetree.png) 遠端儲存庫**基本操作***
+[![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/st-clone.mp4) **下載** `Clone` 遠端儲存庫到本機
+[![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/st-push.mp4) **推送** `Push` 本機修改紀錄到遠端
+[![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/st-pull.mp4) **拉取** `Pull` 遠端儲存庫修改紀錄
+
+###
+
+>*⚠️ 初次與遠端互動會進行驗證
 
 ---
 
