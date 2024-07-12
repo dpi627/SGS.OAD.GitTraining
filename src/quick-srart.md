@@ -141,7 +141,7 @@ bin/   -------------------- #編譯檔案
 *.user -------------------- #個人組態
 [Pp]ackages --------------- #套件目錄
 ```
-- [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/git-ignore.mp4) 建議使用 https://gitignore.io/
+[![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/git-ignore.mp4) 建議使用 https://gitignore.io/
 
 >⚠️ 如果版控中途新增此檔，不會影響已經加入版控 `Tracked` 的資料
 
@@ -201,7 +201,7 @@ https://about.gitea.com/
 
 # ![h:60](../asset/gitea.png) ![h:70](../asset/sourcetree.png) Demo
 
-![w:40](../asset/gitea.png) **Git Server**
+![w:40](../asset/gitea.png) **OAD Git Server** (申請請洽[Jeff](mailto:jeff.hong@sgs.com))
   http://twvoadtpw100004/
   [![w:30](../asset/video.webp)](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/asset/video/gt-create-repo.mp4) **建立**遠端儲存庫
 ###
@@ -228,6 +228,23 @@ https://about.gitea.com/
 - https://www.tenlong.com.tw/products/9789865025274
 ![bg vertical fit right:28%](../asset/book1.png)
 ![bg vertical fit right:28%](../asset/book2.png)
+
+---
+
+<!-- _class: invert -->
+
+![bg left:20%](https://picsum.photos/720?image=862)
+
+# **Next** Steps
+
+|Topic|Keywords|
+|---|---|
+|**Branch**|`checkout` `switch` `merge` `rebase` `conflict`|
+|**Work Flow**|`git flow` `pull request` `code review`|
+|**CI/CD**|`runner` `actions` `pipline` `yaml`|
+|**AI**|`github copilot cli` `commit message generator`|
+|**Server**|`gitea features` `azure devops`|
+|**Misc.**|`git svn` `devops` `github flow` `markdown`|
 
 ---
 
