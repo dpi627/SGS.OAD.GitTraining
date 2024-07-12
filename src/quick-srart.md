@@ -74,11 +74,11 @@ git quick-start "from zero to git" ✨
 
 ---
 
-![bg fit 90%](../asset/allarea.png)
+![bg fit 85%](../asset/git-local-remote.svg)
 
 ---
 
-![bg right:40% vertical](https://fakeimg.pl/960/?text=status)
+![bg left:40% vertical](https://fakeimg.pl/960/?text=status)
 ![bg](https://fakeimg.pl/960/999/ddd/?text=add)
 ![bg](https://fakeimg.pl/960/?text=commit)
 
@@ -102,7 +102,7 @@ git commit -m "{message}"
 
 ---
 
-![bg left:40% vertical](https://fakeimg.pl/960/999/ddd/?text=clone)
+![bg right:40% vertical](https://fakeimg.pl/960/999/ddd/?text=clone)
 ![bg](https://fakeimg.pl/960/?text=pull)
 ![bg](https://fakeimg.pl/960/999/ddd/?text=push)
 
@@ -126,7 +126,7 @@ git push
 
 ---
 
-![bg right:45% fit](../asset/git-ignore.webp)
+![bg left:45% fit](../asset/git-ignore.webp)
 
 # 開始**之前** ... `.gitignore`
 
