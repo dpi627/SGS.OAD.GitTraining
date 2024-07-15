@@ -8,11 +8,14 @@
 ![](https://img.shields.io/badge/gui-Sourcetree-0052CC?logo=sourcetree)
 ![](https://img.shields.io/badge/api-OpenAI-412991?logo=openai) 
 ![](https://img.shields.io/badge/ai-GitHub_Copilot-000000?logo=githubcopilot)
+![](https://img.shields.io/badge/dg-draw.io-F08705?logo=diagrams.net)
 ![](https://img.shields.io/badge/cicd-Gitea_Actions-2088FF?logo=githubactions)
 ![](https://img.shields.io/badge/cicd-YAML-CB171E?logo=yaml)
 ![](https://img.shields.io/badge/doc-Markdown-000000?logo=markdown)
+![](https://img.shields.io/badge/md-LaTex-008080?logo=latex)
+![](https://img.shields.io/badge/md-Mermaid-FF3670?logo=mermaid)
 ![](https://img.shields.io/badge/vc-SVN-809CC9?logo=subversion)
-
+![](https://img.shields.io/badge/misc-Shields.io-000000?logo=shieldsdotio)
 
 # 📚Git 心得分享與實作
 
