@@ -30,8 +30,8 @@ git quick-start "from zero to git" ✨
 
 - **最快**速度入門以下項目
 - ![w:30](../asset/giticon.png) **Git** 基礎知識
-- ![w:30](/asset/sourcetree.png) **Sourcetree** 基礎操作
-- ![w:30](/asset/gitea.png) **Gitea** 基礎功能使用
+- ![w:30](../asset/sourcetree.png) **Sourcetree** 基礎操作
+- ![w:30](../asset/gitea.png) **Gitea** 基礎功能使用
 
 ---
 
