@@ -29,10 +29,11 @@
 - 快速上手基礎版控 [Quick Start](publish/quick-srart.pdf)
 - 完整檢視內訓簡報 [請點此](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish)
 
-# 🏗️專案架構
+# 🗃️專案架構
 
 ```c
-📁 asset        //圖檔、影像檔
+📁 asset        //圖檔
+  📁 video      //影像檔
 📁 public       //簡報發布檔 *.pdf
 📁 src          //簡報原始檔 *.md
 📄 README.md    //本檔案
