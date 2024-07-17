@@ -38,6 +38,10 @@
 📄 README.md    //本檔案
 ```
 
+# 📜補充說明
+
+- [本地專案加入版控流程示範](src/project-first.md)
+
 # 📑參考資料
 - https://markdown.tw/
 - https://marp.app/
