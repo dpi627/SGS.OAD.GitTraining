@@ -5,6 +5,10 @@
 - 通常會建議先擷取 `fetch` 再合併 `merge` (`pull` = `fetch` + `merge`)
 - 先 `fetch` 可預先了解是否衝突 `conflict`，盡早處理
 
+# 📊流程圖
+
+![](../../asset/lims-daily-update.svg)
+
 # 📥拉取 Pull
 
 ![](../../asset/lims2/daily-before-pull.png)
