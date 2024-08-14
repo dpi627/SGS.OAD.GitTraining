@@ -98,7 +98,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg right:40%](https://picsum.photos/720?image=1010)
+![bg left:40%](https://picsum.photos/720?image=1010)
 
 # 說明與**討論**
 
@@ -111,6 +111,22 @@ git --implement "LIMS" -v 2.0 🤖
 - `release` 是否簡化為 `uat`❓
 ###
 >💡任何的合併行為都可能產生衝突，如沒把握排除請知會相關提交人員一起協助
+
+---
+
+![bg right:35%](https://picsum.photos/720?image=1058)
+
+# 討論**結果**與注意事項
+
+- 主要分支為 `main` 與 `dev`
+- 首次 `clone` 後，請確認已 `checkout dev`
+- `main` 限特殊權限操作，開發請用 `dev`
+- 功能分支 `feature` 通常由 `dev` 開立
+- 功能分支 `feature` 前綴使用 `f/`
+- 發行分支 `release` 前綴可用 `r/`
+- 每日更新建議(但不強制)用 `release` 管理
+- ⚠️確認 VS2022 不在偵錯狀態下再操作版控
+- ⚠️功能未完成需切換分支，可用 `stash` 或者乾脆先 `commit`，避免切換前殘留 `unstaged` 檔案
 
 ---
 
