@@ -4,7 +4,7 @@ paginate: true
 footer: git-`lims2.0`
 ---
 
-![bg left](https://picsum.photos/720?image=1002)
+![bg left](https://picsum.photos/1080?image=1002)
 
 ##### ![](../asset/gitlogo.png) in LIMS 2.0
 ###
@@ -18,7 +18,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg right](https://picsum.photos/720?image=1006)
+![bg right](https://picsum.photos/1080?image=1006)
 
 # **A**genda
 
@@ -29,7 +29,8 @@ git --implement "LIMS" -v 2.0 🤖
   每周更新(OAD)
   每周更新(IT)
 - **說明與討論事項**
-- **未來規劃**
+- **討論結果與注意事項**
+- **未來可能規劃**
 
 ---
 
@@ -47,7 +48,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg left](https://picsum.photos/720?image=1050)
+![bg left](https://picsum.photos/1080?image=1050)
 
 ### 常見**名詞**中英對照與說明
 
@@ -65,7 +66,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg right:30%](https://picsum.photos/720?image=1023)
+![bg right:30%](https://picsum.photos/1080?image=1023)
 
 # 流程圖**拆解**
 
@@ -98,7 +99,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg left:40%](https://picsum.photos/720?image=1010)
+![bg left:40%](https://picsum.photos/1080?image=1010)
 
 # 說明與**討論**
 
@@ -114,7 +115,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg right:35%](https://picsum.photos/720?image=1058)
+![bg right:35%](https://picsum.photos/1080?image=1058)
 
 # 討論**結果**與注意事項
 
@@ -132,7 +133,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 <!-- _class: invert -->
 
-![bg left:50%](https://picsum.photos/720?image=1041)
+![bg left:50%](https://picsum.photos/1080?image=1041)
 
 # **Next** Steps
 
@@ -147,7 +148,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg right:60%](https://picsum.photos/720?image=1035)
+![bg right:60%](https://picsum.photos/1080?image=1035)
 
 # 😀 Thank you !
 
