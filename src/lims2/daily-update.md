@@ -18,32 +18,32 @@
 
 ![](../../asset/lims2/daily-pulling.png)
 
-- 因確認不會衝突，就直接進行拉取 `pull`
-- 拉取要注意來源與對象(分支)，確認無誤後按 Pull
+- ⚠️確認切換到 `dev`
+- 拉取要注意來源與對象(分支)，確認無誤後進行拉取 `pull`
 
->⚠️如果有衝突，也會在合併時候擋下，發生了再處理就好
+>💡如果有衝突，也會在合併時候擋下，發生了再處理就好
 
 ![](../../asset/lims2/daily-after-pull.png)
 
 - 完成後可發現 `dev` 與遠端 `origin/dev` 已經為同一版本
-- 確認所在分支為 `dev` 後，進行下一個步驟
 
 # 🔧編譯 Build
 
 ![](../../asset/lims2/daily-rebuild.png)
 
-- 使用 Visual Studio 2022 開啟專案，執行編譯 `Build`
-- 也可執行重建 `Rebuild`，比較乾淨
-- 確認可正常編譯完成(如上圖所示)
+- 使用 Visual Studio 2022 開啟專案
+- ⚠️務必確認目前分支為 `dev` (此時可考慮 [建立發行分支](#️版控個人管理-建議非強制))
+- 執行編譯 `Build`，也可執行重建 `Rebuild`，比較乾淨
+- 確認可正常編譯完成 (如上圖所示)
 
 # 🚀發布 Publish
 
 ![](../../asset/lims2/daily-publish.png)
 
-- 編譯完成後進行發布(部署)
-- 雖然發布時也會編譯，但仍建議先編譯確認沒有問題
-- 發布完成後前往發布目標路徑 Target Location
+- 編譯完成後進行發布(部署) `Publish`
+- 發布完成後開啟目標路徑 `Target Location`
 
+>⚠️雖然發布時也會編譯，但仍建議上一個步驟先重建確認沒有問題<br>
 >💡編譯與發佈操作可用指令取代，減少開啟 IDE 與操作時間，提升效率
 
 # 🗂️複製貼上 Copy & Paste
@@ -51,7 +51,7 @@
 ![](../../asset/lims2/daily-copy-publish.png)
 
 - 開啟發布路徑後，複製五個必要資料夾
-- 如有其他例外請自行加入，例如 ClientAPi 或 Web.Config 等
+- 如有其他例外請自行加入，例如 ClientAPI 或 Web.Config 等
 
 ![](../../asset/lims2/daily-copy.png)
 
