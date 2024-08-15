@@ -1,9 +1,10 @@
-﻿# 💻日常開發流程 Develop
+﻿# 💻日常功能開發 Feature Develop
 
 - 描述 `PG` 日常開發功能流程
 - 首先要取得 `SA` 開立 `mantis單號`
-- 接著確認已經切換到起始分支 (通常是 `dev`)
-- 然後建立新分支，按上方工具列 Branch
+- 接著確認已經切換到開發起始分支 (必須乾淨穩定，例如 `main`)
+- 建立新分支，按 Sourcetree 上方工具列 Branch
+- 確認已切換到新分支，開始進行開發
 
 # 📊流程圖
 
@@ -13,21 +14,21 @@
 
 ![](../../asset/lims2/dev-create-branch.png)
 
-- ⚠️注意目前分支是否為 `dev` (避免從開發中的分支長出分支)
+- ⚠️注意目前分支是否為 `main` (或者其他穩定分支)
 - 輸入分支名稱，使用前綴 `f/` 加 `mantis單號`
 - 按下 Create Branch
 
 ![](../../asset/lims2/dev-create-branch-finish.png)
 
 - 分支建立完成時，會與其起始分支內容相同(版本相同)
-- 例如上圖 `f/1234` 和 `dev` 會在同一個 `node` 上
+- 例如上圖 `f/1234` 和 `main` 會在同一個節點 `node` 上
 - Sourcetree 左側也會出現分支，如果有前綴詞則會自動分類
 
 # 🛠️完成功能開發 Finish Feature
 
 - 分支開好後，即可(在分支上)開始進行功能開發
 - 完成後記得 `add` 並 `commit`，同時撰寫 commit message
-- 下圖是一個完成功能的示範
+- 下圖是一個完成功能的釋例圖
 
 ![](../../asset/lims2/dev-branch-commit.png)
 
@@ -36,14 +37,14 @@
 
 # 🔄合併分支 Merge (Feature) Branch
 
-- 開發完畢需將修改併入 `dev`，以便更新到測試環境
+- ⚠️開發完畢需將修改併入 `dev`，以便更新到測試環境
 - Git 並沒有併入 `merge into` 這種行為(指令)
-- 所以實際是先切換(checkout)到 `dev`，然後合併 `merge` 分支 `f/1234`
+- 所以實際是先切換 `checkout` 到 `dev`，然後合併 `merge` 分支 `f/1234`
 
 ![](../../asset/lims2/dev-switch-to-dev.png)
 
-- Sourcetree 左側選單點兩下 `dev` 即可切換分支，指令可用 `checkout` or `swtich`
-- 🚨務必注意切換前原本修改已經 `commit` 或者 add to `stash`
+- Sourcetree 左側選單點兩下 `dev` 即可切換分支，指令可用 `checkout` 或 `swtich`
+- 🚨注意切換前如有未完成修改請先 `commit` 或者加入 `stash`
 
 ![](../../asset/lims2/dev-merge-feature-branch.png)
 
@@ -55,7 +56,7 @@
 
 - 合併完成後，會看到 `dev` 已經與 `f/1234` 在同一個 `node`
 - 表示 `dev` 已包含 `f/1234` 修改內容
-- Sourcetree 會提示可進行 `push` (判斷 `dev` 與 `origin/dev` 有差距)
+- Sourcetree 會提示可進行 `push` (表示 `dev` 與 `origin/dev` 有版本差異)
 
 # 🚀推送更新 Push
 
