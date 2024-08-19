@@ -28,8 +28,8 @@ git --implement "LIMS" -v 2.0 🤖
   每日更新
   每周更新(OAD)
   每周更新(IT)
-- 📝**說明討論與注意事項**
-- 🎭**使用情境**
+- 📝**說明與注意事項**
+- 🎭**使用情境範例**
 - 🚀**未來規劃**
 
 ---
@@ -70,7 +70,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ![bg right:60% 95%](../asset/lims-first-use.svg)
 
-# **初次**使用[📝](../src/lims2/first-use.md)
+# **初次**使用[📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/first-use.md)
 
 - 初次使用請先 `clone`
 - `clone` 預設簽出**預設分支**(通常就是 `main`)
@@ -87,13 +87,13 @@ git --implement "LIMS" -v 2.0 🤖
 
 # 🔄主要流程**拆解**
 
-- **開發流程 Feature Development** [📝](../src/lims2/develop.md)
+- **開發流程 Feature Development** [📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/develop.md)
   日常功能開發流程，包含 `SA` 開單與 `PG` 開發等
-- **每日更新 Daily Update** [📝](../src/lims2/daily-update.md)
+- **每日更新 Daily Update** [📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/daily-update.md)
   `PG` 每日更新，以及更新後 `SA` 通知 `BU` 等流程
-- **每周更新 Weekly Update (OAD)** [📝](../src/lims2/weekly-update-oad.md)
+- **每周更新 Weekly Update (OAD)** [📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/weekly-update-oad.md)
   `SA` 通知 `PG` 推送更新並建立 `PR`，審核併入 `main`
-- **每周更新 Weekly Update (IT)** [📝](../src/lims2/weekly-update-it.md)
+- **每周更新 Weekly Update (IT)** [📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/weekly-update-it.md)
   `SA` 拉取 `main` 編譯並發布，聯絡 `PM` 通知 `IT`
   #
 >📝表示有額外文件可參考
@@ -135,7 +135,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 # 🎭使用情境 **Use Case**
 
-- 🚧剛剛 `main` 更新了，手邊還有**開發中**功能[📝](../src/lims2/usecase-sync-main.md)
+- 🚧剛剛 `main` 更新了，手邊還有**開發中**功能[📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/usecase-sync-main.md)
 - 🐛正式機**剛上線**發現異常，需進行快速修復
 - 🔗多張需求單有**關聯**，程式邏輯重疊可一起做
 - ⚡開發到一半，突然來了緊急**插件**，怎麼辦
