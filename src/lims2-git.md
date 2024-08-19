@@ -20,7 +20,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ![bg right](https://picsum.photos/1080?image=1006)
 
-# **A**genda
+# 🎯Agenda
 
 - 🔍**流程圖檢視要點**
 - 🔄**主要流程拆解**
@@ -28,8 +28,9 @@ git --implement "LIMS" -v 2.0 🤖
   每日更新
   每周更新(OAD)
   每周更新(IT)
-- 📝**說明與注意事項**
+- 💬**說明與注意事項**
 - 🎭**使用情境範例**
+- ✅**已知問題與處理**
 - 🚀**未來規劃**
 
 ---
@@ -117,7 +118,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ![bg right:35%](https://picsum.photos/1080?image=1010)
 
-# 🧠說明討論**與**注意事項
+# 💬說明討論**與**注意事項
 
 - 主要分支為 `main` 與 `uat`
 - `clone` 後，請確認已簽出 `main` 與 `uat`
@@ -174,6 +175,20 @@ git --implement "LIMS" -v 2.0 🤖
 - git 可自訂 `diff-tool` 與 `merge-tool`
 ###
 >💡程式衝突可找相關開發者一起討論，避免衍伸出其他更多衝突(物理)😆
+
+---
+
+![bg right:40%](https://picsum.photos/1080?image=1073)
+
+# ✅已知問題**與**處理
+
+>已知主機 `twvoadtpw100004` 問題，之前使用 `twoadcode` 均沒有遇到，目前無解
+
+- ❓與遠端進行**驗證**時，偶爾會異常
+  💡`push` 與 `pull` 時偶爾會遇到，一次不行就跑兩次，通常第二次都會成功
+
+- ❓Email **通知功能**無法使用
+  💡`Gitea` 完成特定操作後會發送 Email 通知，目前無法啟用公司信箱作為寄送功能使用，暫時以 `TEAMS` 人工通知取代
 
 ---
 
