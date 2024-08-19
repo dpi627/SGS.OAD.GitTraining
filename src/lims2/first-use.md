@@ -3,6 +3,10 @@
 - 第一次(或重新開始)準備 LIMS 開發環境時可參考
 - 例如換電腦或初次加入開發團隊
 
+# 📊流程圖
+
+![](../../asset/lims-first-use.svg)
+
 # 🌐遠端儲存庫 Remote Repository
 
 ```

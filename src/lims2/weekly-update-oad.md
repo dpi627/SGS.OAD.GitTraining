@@ -1,16 +1,18 @@
 ﻿# 📅每周更新 Weekly Update (OAD)
 
+# 🚨文件修改完成期間，如看到 `dev` 請一律先當成 `uat`，表示要發佈到測試機的更新分支
+
 - 每周更新分為兩個部分 `OAD` 與 `IT` 兩部分說明
 - `OAD` 部分包含
-  - 提交當周所有測試通過分支
-  - 於遠端 `Git Server` 建立 `Pull Request` 
-  - 於遠端 `Git Server` 進行 `Code Review`
+  - `PG` 提交所有測試通過分支
+  - `PG` 於遠端 `Git Server` 建立 `Pull Request` 
+  - `SA` 於遠端 `Git Server` 進行 `Code Review`
 
 # 📊流程圖
 
 ![](../../asset/lims-weekly-update-oad.svg)
 
-# 🧪測試報告 Test Report
+# 🧪測試結果 Test Result
 
 - `BU` 測試完畢，通知 `SA` 結果
 - `SA` 收到測試報告後通知 `PG`：
@@ -27,14 +29,14 @@
 
 ![](../../asset/lims2/weekly-oad-pushing.png)
 
-- 點選 Sourcetree 上方 Push 功能
+- 點選 Sourcetree 上方 `Push` 功能
 - ⚠️確認推送分支為 local `f/1234` 到 remote `f/1234`
-- ⚠️可複選一次推送，務必確認僅允許推送(測試通過)之分支才可勾選
+- ⚠️可複選一次推送，務必確認是 `SA` 公告**測試通過**之分支才可勾選
 
 ![](../../asset/lims2/weekly-oad-pushed.png)
 
 - 完成之後 Sourcetree 會出現追蹤分支 `origin/f/1234`
-- 如此表示遠端的分支 `f/1234` 也已經建立完畢
+- 如此表示遠端 `RTEMOTE` 的分支 `f/1234` 應也建立完畢
 
 # 🌐前往遠端 Go to Git Server
 
@@ -42,7 +44,7 @@
 
 - 前往遠端 `http://twvoadtpw100004/OAD-AutoChem/BLIMS`
 - 發現系統自動提示已經推送分支，並可直接建立 Pull Request
-- 同時也可觀察到遠端儲存庫多了一個分支 (正常應該只有 `main` 與 `dev` 兩個)
+- 同時也可觀察到遠端儲存庫多了一個分支 (正常應該只有 `main` 與 `uat` 兩個)
 
 >💡系統提示有時間限制，超過太久就不會顯示。如果沒有看到，可直接點選儲存庫首頁上方 `Pull Requests` 頁籤，裡面也可建立 Pull Request
 
@@ -56,14 +58,14 @@
 ![](../../asset/lims2/weekly-oad-pr-preview.png)
 
 - 點選 `New Pull Request` 功能後會先進到一個預覽畫面
-- 這邊要再次確認 `merge into main` 與 `pull from f/1234` 目標是否正確
+- 這邊要再次確認 `merge into` `main` 與 `pull from` `f/1234` 目標是否正確
 - 下方也顯示了這個分支包含的提交紀錄，確認無誤再次點選 `New Pull Request`
 
 >⚠️這邊因為測試重建分支，包含了他人修改紀錄，正常應該只有該功能的紀錄才對
 
 ![](../../asset/lims2/weekly-oad-pr-edit.png)
 
-- Pull Request 包含標題與內容，標題預設為分支名稱
+- Pull Request 包含**標題**與**內容**，標題預設為分支名稱
 - 內容沒有規範，留白或自行補充都可以，支援 Markdown 語法
 - 編輯完畢後按 `Create Pull Request` 即可完成建立
 
@@ -112,7 +114,7 @@
 - 上述相關操作紀錄均會保留
 - 至此即完成 OAD 主要週更新流程
 
-# 刪除分支(非必要) Delete (Feature) Branch
+# 🗑️刪除分支(非必要) Delete (Feature) Branch
 
 ![](../../asset/lims2/weekly-oad-st-delete-branch.png)
 
