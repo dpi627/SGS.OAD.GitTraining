@@ -6,11 +6,12 @@ footer: git-`lims2.0`
 
 ![bg left](https://picsum.photos/1080?image=1002)
 
-##### ![w:160](../asset/gitlogo.png)  LIMS 2.0 Workflow
+##### ![w:160](../asset/gitlogo.png) Workflow in LIMS
 ###
 ```bat
 git --implement "LIMS" -v 2.0 🤖
 ```
+###### 🚧 LIMS工作流程建置與導入
 #
 #
 
@@ -18,15 +19,32 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg right](https://picsum.photos/1080?image=1006)
+![bg right:40%](https://picsum.photos/720?image=1005)
 
-# 🎯Agenda
+## 👤**適合**對象
+
+- 參與化性 LIMS 專案同仁 (不限形式)
+- 具備 Git 基礎知識，包含 CLI 與 GUI 使用
+- 了解工作流程 `Workflow` 基本概念
+
+## 🎯預期**目標**
+
+- 完成 LIMS 新工作流程制訂與實行
+- 解決 SSDLC 稽核缺失
+###
+>💡需要複習的同仁，可參考之前分享資料 [`0`](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish/section0.pdf) [`1`](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish/section1.pdf) [`2`](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish/section2.pdf) [`3`](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish/section3.pdf) [`4`](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish/section4.pdf) [`5`](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish/section5.pdf) 與 [`快速上手`](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish/quick-start.pdf) [`GitFlow`](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish/GitFlow.pdf)
+
+---
+
+![bg left:60%](https://picsum.photos/1080?image=1068)
+
+# 🏷️Agenda
 
 - 🔍**流程圖檢視要點**
 - 🔄**主要流程拆解**
-  功能開發
-  每日更新
-  每周更新(OAD/IT)
+  　功能開發
+  　每日更新
+  　每周更新 `OAD` `IT`
 - 💬**說明與注意事項**
 - 🎭**使用情境演示**
 - ✅**已知問題處理**
@@ -34,7 +52,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg left:45%](https://picsum.photos/1080?image=1050)
+![bg right:45%](https://picsum.photos/1080?image=1050)
 
 # 💻常見**指令**
 

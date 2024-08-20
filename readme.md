@@ -26,7 +26,7 @@
 - 操作影像檔，以 `mp4` 錄製
   
 ## 💡如想直接檢視簡報
-- 快速上手基礎版控 [請點此](publish/quick-srart.pdf)，搭配影片示範，快速上手 Sourcetree 與 Gitea 基礎操作
+- 快速上手基礎版控 [請點此](publish/quick-start.pdf)，搭配影片示範，快速上手 Sourcetree 與 Gitea 基礎操作
 - 完整檢視內訓簡報 [請點此](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish)，請研讀 `section0` 到 `section5`，並嘗試完成最後作業
 - LIMS 2.0 導入版控 [請點此](publish/lims2-git.pdf)，包含 LIMS 2.0 Workflow 規劃與多種 Use Case 討論
 
