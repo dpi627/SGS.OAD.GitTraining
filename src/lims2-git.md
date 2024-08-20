@@ -24,31 +24,30 @@ git --implement "LIMS" -v 2.0 🤖
 
 - 🔍**流程圖檢視要點**
 - 🔄**主要流程拆解**
-  開發流程
+  功能開發
   每日更新
-  每周更新(OAD)
-  每周更新(IT)
+  每周更新(OAD/IT)
 - 💬**說明與注意事項**
-- 🎭**使用情境範例**
-- ✅**已知問題與處理**
+- 🎭**使用情境演示**
+- ✅**已知問題處理**
 - 🚀**未來規劃**
 
 ---
 
-![bg left](https://picsum.photos/1080?image=1050)
+![bg left:45%](https://picsum.photos/1080?image=1050)
 
-### 💻常見**指令**中英對照
+# 💻常見**指令**
 
 |||
 |-:|-|
-|**clone**|`複製` `下載`|
-|**checkout**|`簽出(指定分支)`|
-|**add**|`新增` `加入(檔案到暫存)`|
-|**commit**|`提交(版本更新)`|
-|**merge**|`合併(分支、更新內容)`|
+|**clone**|`複製`、`下載`|
+|**checkout**|`簽出(分支、節點)`|
+|**add**|`新增`、`加入(檔案到暫存區)`|
+|**commit**|`提交(更新內容、檔案修改)`|
+|**merge**|`合併(分支)`|
 |**push**|`推送(更新歷程到遠端)`|
-|**pull**|`拉取(更新歷程)`|
-|**fetch**|`擷取 = 更新追蹤分支`|
+|**pull**|`拉取(更新歷程到本地)`|
+|**fetch**|`擷取(更新本地追蹤分支)`|
 
 ---
 
@@ -75,7 +74,7 @@ git --implement "LIMS" -v 2.0 🤖
 # **初次**使用[📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/first-use.md)
 
 - 初次使用請先 `clone`
-- `clone` 預設簽出**預設分支**(通常就是 `main`)
+- `clone` 預設簽出**預設分支** (通常是 `main`)
 - 其他分支需**自行簽出**
 
 #
@@ -90,14 +89,14 @@ git --implement "LIMS" -v 2.0 🤖
 
 # 🔄主要流程**拆解**
 
-- **開發流程 Feature Development** [📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/develop.md)
-  日常功能開發流程，包含 `SA` 開單與 `PG` 開發等
+- **功能開發 Feature Development** [📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/develop.md)
+  日常功能開發流程，包含 `SA` 開單與 `PG` 開發
 - **每日更新 Daily Update** [📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/daily-update.md)
-  `PG` 每日更新，以及更新後 `SA` 通知 `BU` 等流程
+  `PG` 每日更新測試機，更新後 `SA` 通知 `BU`
 - **每周更新 Weekly Update (OAD)** [📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/weekly-update-oad.md)
-  `SA` 通知 `PG` 推送更新並建立 `PR`，審核併入 `main`
+  `SA` 通知 `PG` 推送更新建立 `PR`，審核後併入 `main`
 - **每周更新 Weekly Update (IT)** [📝](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/src/lims2/weekly-update-it.md)
-  `SA` 拉取 `main` 編譯並發布，聯絡 `PM` 通知 `IT`
+  `SA` 拉取 `main` 編譯並發布，通知 `PM` 聯絡 `IT`
   #
 >📝表示有額外文件可參考
 ---
@@ -118,19 +117,36 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg right:35%](https://picsum.photos/1080?image=1010)
+![bg left:40%](https://picsum.photos/1080?image=1010)
 
-### 💬說明討論**與**注意事項
+# 💬說明事項
 
-- 常駐分支為 `main` 與 `uat`，需確認均已簽出
-- 🚨🚨🚨任何操作之前務必確認**目前所在分支**
-- 遠端 `main` 設定保護、不可 `push`、用 `PR` 更新
-- ⚠️開發由 `main` 開分支，完工後以 `uat` 合併
+- 常駐分支為 `main` 與 `uat`
+- `main` 為穩定分支，部署正式機使用
+- `uat` 為測試分支，部署測試機使用
+- 遠端 `main` 設定保護、禁止隨意 `push`
+- 更新 `main` 需建立 `PR`，專人審核後併入
 - 開發功能 `feature` 分支前綴使用 `f/`
-- 每日與每週更新**建議**用分支管理 (不強制)
-- 每日更前綴可用 `u/`，週更 `r/`，熱修 `h/`
-- ⛔**關閉** VS2022 再操作版控有機會避免一些問題
-- ⚠️功能**未完成**需切換分支，可 `stash` 或乾脆先 `commit`，避免切換分支前殘留 `unstaged` 檔案
+- 每日與每週更新**建議**用分支管理
+- 每日更前綴可用 `u/`，每週更新 `r/`
+- 熱修 `hotfix` 前綴可用 `h/`
+
+>⚠️務必確認常駐分支 `main` `uat` 均已簽出
+
+---
+
+![bg right:35%](https://picsum.photos/1080?image=1081)
+
+# 🚨**注意**事項
+
+- ⚠️**任何操作**均需確認**當前分支**與**目標分支**
+- 開發由 `main` 開分支，完工後切換 `uat` 合併
+- **關閉**開發工具再操作版控有機會避免一些問題
+- 提交時務必確認修改檔案**名稱**與**內容**是否正確
+- 提交時如發現異常修改，確認後可 `Discard`
+- 開發中**切換分支**，可以先 `commit` 或 `stash`，盡量避免切換分支時殘留 `unstaged` 檔案
+- ⚠️**任何操作**均需確認**當前分支**與**目標分支**
+- ⚠️**任何操作**均需確認**當前分支**與**目標分支**
 
 ---
 
@@ -169,7 +185,7 @@ git --implement "LIMS" -v 2.0 🤖
 
 ---
 
-![bg right:40%](https://picsum.photos/1080?image=1062)
+![bg left:40%](https://picsum.photos/1080?image=1062)
 
 # 💥衝突 **Conflict**
 
