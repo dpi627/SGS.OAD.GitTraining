@@ -29,6 +29,8 @@
 - 快速上手基礎版控 [請點此](publish/quick-start.pdf)，搭配影片示範，快速上手 Sourcetree 與 Gitea 基礎操作
 - 完整檢視內訓簡報 [請點此](http://twvoadtpw100004/brian_li/SGS.OAD.GitTraining/src/branch/main/publish)，請研讀 `section0` 到 `section5`，並嘗試完成最後作業
 - LIMS 2.0 導入版控 [請點此](publish/lims2-git.pdf)，包含 LIMS 2.0 Workflow 規劃與多種 Use Case 討論
+- 📽️檢視 20240716 Gitea & SourceTree 會議錄影：<small>(內部連結自行複製貼上)</small><BR>
+  `\\twfs007\sgsshare\_跨部門資料區\OAD\Jeff\20240716_Gitea&SourceTree教學`
 
 # 🗃️專案架構
 
